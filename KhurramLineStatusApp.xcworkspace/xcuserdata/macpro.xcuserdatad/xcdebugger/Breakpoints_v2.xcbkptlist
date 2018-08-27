@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KhurramLineStatusApp/JsonClient.swift"
-            timestampString = "556890102.777914"
+            timestampString = "557060741.7552609"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KhurramLineStatusApp/JsonClient.swift"
-            timestampString = "556890102.778241"
+            timestampString = "557060741.755577"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "2"
@@ -48,6 +48,22 @@
             startingLineNumber = "27"
             endingLineNumber = "27"
             landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KhurramLineStatusApp/Controllers/LineStatusViewController.swift"
+            timestampString = "557060130.0462739"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "getLineStatus()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
