@@ -1,4 +1,4 @@
-import UIKit
+//import UIKit
 import RxSwift
 import RxCocoa
 
@@ -36,22 +36,6 @@ class LineStatusViewController: UIViewController {
         table.backgroundColor = .blue
     }
     
-    func cleanMessage(message:String) -> String {
-        return message.replacingOccurrences(of: "Underground Station", with: "")
-            .replacingOccurrences(of: "Rail Station", with: "")
-    }
-    
-    func getFriendlyMessages(message:String,cardParts:[CardPart]) -> [String] {
-        var messages = [String]()
-        for l in cardParts {
-            if l is ComplexCardPart {
-                let complexCardPart = l as! ComplexCardPart
-                messages.append( "\(message) \n \(complexCardPart.from) .. \(complexCardPart.to)")
-            }
-        }
-        return messages
-    }
-    
     func updateDataset(data:LineStatusViewModel) {
         Shared.Instance.updateUI {
             self.view.backgroundColor = .white
@@ -72,7 +56,7 @@ class LineStatusViewController: UIViewController {
         super.viewDidAppear(animated)
         self.view.backgroundColor = UIColor.lightGray
         self.getLineStatus()
-        Shared.Instance.runCodeInIntervals(interval: 5, code: {
+        Shared.Instance.runCodeInIntervals(interval: 500, code: {
             self.getLineStatus()
         })
         self.view.backgroundColor = UIColor.yellow

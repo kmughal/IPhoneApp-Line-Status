@@ -17,7 +17,8 @@ struct Shared {
     }
     
     func runCodeInIntervals(interval:Float,code:@escaping () -> Void) -> Disposable {
-        return Observable<Int>.interval(5, scheduler: SerialDispatchQueueScheduler(qos: .default))
+      
+        return Observable<Int>.interval(RxTimeInterval(interval), scheduler: SerialDispatchQueueScheduler(qos: .default))
             .subscribe { event in
                 code()
                 print("\(Date())")

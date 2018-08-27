@@ -43,6 +43,7 @@
 		8E9464DC213435550015022B /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464D9213435550015022B /* ColorExtensions.swift */; };
 		8E9464DD213435550015022B /* LabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464DA213435550015022B /* LabelExtensions.swift */; };
 		8E9464DE213435560015022B /* LayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464DB213435550015022B /* LayerExtensions.swift */; };
+		8EAE9EFC21349A240097FE85 /* CardPartsMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAE9EFB21349A240097FE85 /* CardPartsMessages.swift */; };
 		8EC01D172132BC280060E8FE /* DistruptionsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC01D162132BC280060E8FE /* DistruptionsBuilder.swift */; };
 		8EC01D192132BDD40060E8FE /* GoodServicesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC01D182132BDD40060E8FE /* GoodServicesBuilder.swift */; };
 		8EC01D242132FAAF0060E8FE /* LineStatusTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC01D232132FAAF0060E8FE /* LineStatusTable.swift */; };
@@ -124,6 +125,7 @@
 		8E9464D9213435550015022B /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorExtensions.swift; path = Extensions/ColorExtensions.swift; sourceTree = "<group>"; };
 		8E9464DA213435550015022B /* LabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LabelExtensions.swift; path = Extensions/LabelExtensions.swift; sourceTree = "<group>"; };
 		8E9464DB213435550015022B /* LayerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerExtensions.swift; path = Extensions/LayerExtensions.swift; sourceTree = "<group>"; };
+		8EAE9EFB21349A240097FE85 /* CardPartsMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPartsMessages.swift; sourceTree = "<group>"; };
 		8EC01D162132BC280060E8FE /* DistruptionsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistruptionsBuilder.swift; sourceTree = "<group>"; };
 		8EC01D182132BDD40060E8FE /* GoodServicesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServicesBuilder.swift; sourceTree = "<group>"; };
 		8EC01D232132FAAF0060E8FE /* LineStatusTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineStatusTable.swift; sourceTree = "<group>"; };
@@ -397,6 +399,7 @@
 				8E9464D42134352A0015022B /* LineMessageCard.swift */,
 				8E9464D32134352A0015022B /* CardGroup.swift */,
 				8E9464D12134352A0015022B /* CardPack.swift */,
+				8EAE9EFB21349A240097FE85 /* CardPartsMessages.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -665,6 +668,7 @@
 				8E9464C9213434BA0015022B /* ServiceType.swift in Sources */,
 				8EE42DED2131BF3C00631B36 /* ApiLineStatusViewModel.swift in Sources */,
 				8E7A13DB21283FDA0097D9B6 /* LineStatusViewController.swift in Sources */,
+				8EAE9EFC21349A240097FE85 /* CardPartsMessages.swift in Sources */,
 				8E9464CD213434BA0015022B /* NetworkStatus.swift in Sources */,
 				8E4E083E2134638F00C702EA /* OverallStatusCard.swift in Sources */,
 				8E9464D0213434E70015022B /* ApiService.swift in Sources */,

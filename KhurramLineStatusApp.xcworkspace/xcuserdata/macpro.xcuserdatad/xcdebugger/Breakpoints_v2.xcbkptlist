@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KhurramLineStatusApp/Controllers/LineStatusViewController.swift"
-            timestampString = "557083652.872539"
+            timestampString = "557094505.7228481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
             endingLineNumber = "67"
-            landmarkName = "getLineStatus()"
+            landmarkName = "viewWillTransition(to:with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
