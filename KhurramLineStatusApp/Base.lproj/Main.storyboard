@@ -1,24 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Johnston100-Regular.otf">
+            <string>Johnston100-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Init Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InitController" customModule="KhurramLineStatusApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcX-YC-Ejr">
+                                <rect key="frame" x="83" y="317" width="209" height="54.5"/>
+                                <fontDescription key="fontDescription" name="Johnston100-Regular" family="Johnston100" pointSize="48"/>
+                                <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FcX-YC-Ejr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="VtV-5j-dbZ"/>
+                            <constraint firstItem="FcX-YC-Ejr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="y2v-LZ-AbC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Line Status View Controller-->
+        <scene sceneID="awi-nl-jVq">
+            <objects>
+                <viewController storyboardIdentifier="LineStatusController" id="eS6-ob-ntf" customClass="LineStatusViewController" customModule="KhurramLineStatusApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="enD-hC-UmQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4V-33-9Nl">
+                                <rect key="frame" x="22.5" y="207" width="330.5" height="198"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Loading please wait">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Johnston100-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O4V-33-9Nl" firstAttribute="top" secondItem="M9X-R4-WaN" secondAttribute="top" constant="187" id="TCy-na-CgB"/>
+                            <constraint firstItem="O4V-33-9Nl" firstAttribute="centerX" secondItem="enD-hC-UmQ" secondAttribute="centerX" id="eNY-wk-5iE"/>
+                            <constraint firstItem="M9X-R4-WaN" firstAttribute="bottom" secondItem="O4V-33-9Nl" secondAttribute="bottom" constant="262" id="ubd-u8-XGs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M9X-R4-WaN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGD-ay-npM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1437.5999999999999" y="33.733133433283363"/>
         </scene>
     </scenes>
 </document>

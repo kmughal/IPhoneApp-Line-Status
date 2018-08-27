@@ -1,9 +1,7 @@
-//
-//  CardStyles.swift
-//  KhurramLineStatusApp
-//
-//  Created by macpro on 25/08/2018.
-//  Copyright © 2018 macpro. All rights reserved.
-//
-
 import Foundation
+
+enum CardStyles : Int
+{
+    case OverallStatus = 0
+    case LineMessage = 1
+}

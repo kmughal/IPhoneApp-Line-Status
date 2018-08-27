@@ -1,9 +1,11 @@
-//
-//  File.swift
-//  KhurramLineStatusApp
-//
-//  Created by macpro on 25/08/2018.
-//  Copyright © 2018 macpro. All rights reserved.
-//
-
 import Foundation
+
+enum CardGroupStyles : Int
+{
+    case Status = 1
+    case Disruption = 2
+    case NightStatus = 3
+    case LineInfo = 4
+    case LocalLines = 5
+    case Ticker = 6
+}

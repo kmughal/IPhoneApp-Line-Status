@@ -1,9 +1,13 @@
-//
-//  Card.swift
-//  KhurramLineStatusApp
-//
-//  Created by macpro on 25/08/2018.
-//  Copyright © 2018 macpro. All rights reserved.
-//
-
 import Foundation
+
+class Card {
+    var style : CardStyles
+    var line : String
+    var name : String
+    
+    init(style:CardStyles,line:String,name:String) {
+        self.style = style
+        self.line = line
+        self.name = name
+    }
+}

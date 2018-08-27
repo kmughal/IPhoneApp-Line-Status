@@ -1,9 +1,14 @@
-//
-//  File.swift
-//  KhurramLineStatusApp
-//
-//  Created by macpro on 26/08/2018.
-//  Copyright © 2018 macpro. All rights reserved.
-//
-
 import Foundation
+import UIKit
+
+class LineStatusCellField {
+    var name : String = ""
+    var status : String = ""
+    var color : UIColor = .white
+    
+    init(name:String,status:String,color: UIColor) {
+        self.name = name
+        self.status = status
+        self.color = color
+    }
+}

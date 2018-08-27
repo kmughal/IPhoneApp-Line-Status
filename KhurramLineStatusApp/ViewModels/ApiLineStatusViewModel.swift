@@ -7,6 +7,14 @@ class ApiLineStatusViewModel {
     var hasDisruptions : Bool
     var hasGoodService : Bool
     
+    static func CreateEmpty() -> ApiLineStatusViewModel {
+        return ApiLineStatusViewModel(
+            lines: [Line](),
+            networkStatus: NetworkStatus.CreateEmpty() ,
+            hasDisruptions: false,
+            hasGoodService: false)
+    }
+    
     init(lines:[Line],networkStatus: NetworkStatus,hasDisruptions: Bool,hasGoodService: Bool) {
         self.lines = lines
         self.networkStatus = networkStatus

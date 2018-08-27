@@ -4,28 +4,27 @@ import RxSwift
 
 class ApiService {
     
-//    func isGoodService(lines:[Line]) -> Bool {
-//        return lines.filter({
-//            return $0.lineStatuses.filter({
-//                return $0.statusSeverity != 10
-//            }).count == 0
-//        }).count == 0
-//    }
+    private let apiEndPointHelper:ApiEndPoints
     
-   
-    func getLineStatusUrl() -> String {
-        if  let dic = Bundle.main.infoDictionary {
-            return dic["LineStatusUrl"] as! String
-        } else {
-            return ""
-        }
+    init() {
+        self.apiEndPointHelper = ApiEndPoints()
     }
     
     
-    func get() -> Observable<[Line]> {
+    func getLineStatus() -> Observable<[Line]> {
+        let result:Observable<[Line]> = getResponse(url:apiEndPointHelper.lineStatusEndPoint())
+        return result
+    }
+    
+    func getNetworkStatus() -> Observable<NetworkStatus> {
+        let result:Observable<NetworkStatus> = getResponse(url:apiEndPointHelper.networkStatusEndPoint())
+        return result
+    }
+    
+    private func getResponse<T:Codable>(url:String) -> Observable<T> {
         let client = JsonClient()
-        let result:Observable<[Line]> = client.getResult(getLineStatusUrl())
-       return result
+        let result:Observable<T> = client.getResult(url)
+        return result
     }
 }
 

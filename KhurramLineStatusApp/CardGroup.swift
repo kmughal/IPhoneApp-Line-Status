@@ -1,9 +1,11 @@
-//
-//  CardGroup.swift
-//  KhurramLineStatusApp
-//
-//  Created by macpro on 25/08/2018.
-//  Copyright © 2018 macpro. All rights reserved.
-//
-
 import Foundation
+
+class CardGroup {
+    var style:CardGroupStyles
+    var cards : [Card]
+    
+    init(style:CardGroupStyles,cards:[Card]) {
+        self.style = style
+        self.cards = cards
+    }
+}

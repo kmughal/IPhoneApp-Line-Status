@@ -2,6 +2,29 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Bakerloo</key>
+	<string>#894E24</string>
+	<key>Circle</key>
+	<string>#ff0000</string>
+	<key>Waterloo</key>
+	<string>#76D0BD</string>
+	<key>District</key>
+	<string>#008000</string>
+	<key>Overground</key>
+	<string>#FFA500</string>
+	<key>BaseUrl</key>
+	<string>https://api.tfl.gov.uk</string>
+	<key>LineStatus</key>
+	<string>/Line/Mode/tube%2Coverground%2Ctflrail%2Cdlr%2Ctram/Status?detail=true</string>
+	<key>NetworkStatus</key>
+	<string>/NetworkStatus</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Johnston100-Thin.otf</string>
+		<string>Johnston100-Medium.otf</string>
+		<string>Johnston100-Light.otf</string>
+		<string>Johnston100-Regular.otf</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

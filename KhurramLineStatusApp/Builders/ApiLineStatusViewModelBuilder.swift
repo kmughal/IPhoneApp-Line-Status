@@ -1,9 +1,29 @@
-//
-//  ApiLineStatusViewModelBuilder.swift
-//  KhurramLineStatusApp
-//
-//  Created by macpro on 25/08/2018.
-//  Copyright © 2018 macpro. All rights reserved.
-//
-
 import Foundation
+import RxCocoa
+import RxSwift
+
+class ApiLineStatusViewModelBuilder {
+    
+    private let lineStatusService:ApiService
+    
+    init() {
+        self.lineStatusService = ApiService()
+    }
+    
+    func build() -> Observable<ApiLineStatusViewModel> {
+        
+       let fetchLineStatus = lineStatusService.getLineStatus()
+       let fetchNetworkStatus = lineStatusService.getNetworkStatus()
+        
+        return Observable
+            .zip(fetchLineStatus,
+                 fetchNetworkStatus) { (lines, networkStatus) throws -> ApiLineStatusViewModel in
+                    return ApiLineStatusViewModel(
+                        lines: lines,
+                        networkStatus: networkStatus,
+                        hasDisruptions: ApiLineStatusViewModel.hasDelays(ls: lines),
+                        hasGoodService: ApiLineStatusViewModel.hasAtleastOneGoodService(ls: lines))
+                    
+            }
+    }
+}

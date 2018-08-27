@@ -1,9 +1,9 @@
-
 import UIKit
 
-class ViewController: UIViewController {
+class InitController: UIViewController {
     
     let lineStatusControllerName = "LineStatusController"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         return (view.window?.rootViewController)!
     }
     
-    func delayForOneSecond() -> ViewController {
+    func delayForOneSecond() -> InitController {
         Thread.sleep(until: Date(timeIntervalSinceNow: 1.0))
         return self
     }

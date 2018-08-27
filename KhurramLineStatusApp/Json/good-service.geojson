@@ -1,6 +1,15 @@
 {
-    "type": "MultiPolygon",
-    "coordinates": [
-        
-    ]
+    "_comment": "Good service on all lines",
+    "deck": "Default",
+    "cardPacks": [{
+                  "style": "Secondary",
+                  "cardGroups": [{
+                                 "style": "Status",
+                                 "cards": [{
+                                           "style": "OverallStatus",
+                                           "message": "Good service on all lines",
+                                           "modes": ["Tube", "Overground", "TfL Rail", "DLR", "Tram"]
+                                           }]
+                                 }]
+                  }]
 }

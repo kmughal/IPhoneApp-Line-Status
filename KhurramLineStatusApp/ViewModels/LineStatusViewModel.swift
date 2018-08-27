@@ -1,9 +1,16 @@
-//
-//  LineStatusViewModel.swift
-//  KhurramLineStatusApp
-//
-//  Created by macpro on 25/08/2018.
-//  Copyright © 2018 macpro. All rights reserved.
-//
-
 import Foundation
+
+class LineStatusViewModel {
+    
+    var style: String
+    var cardPacks : [CardPack]
+    
+    init(style:String,cardPacks : [CardPack]) {
+        self.style = style
+        self.cardPacks = cardPacks
+    }
+    
+    func addCardPack(cardPack:CardPack) {
+        self.cardPacks.append(cardPack)
+    }
+}

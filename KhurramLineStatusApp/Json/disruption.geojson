@@ -1,6 +1,44 @@
 {
-    "type": "MultiPolygon",
-    "coordinates": [
-        
-    ]
+"_comment": "Non-localised one disruption",
+"deck": "Default",
+"cardPacks": [
+              {
+              "style": "Primary",
+              "cardGroups": [
+                             {
+                             "style": "LineInfo",
+                             "cards": [
+                                       {
+                                       "style": "LineMessage",
+                                       "line": "bakerloo",
+                                       "name": "Bakerloo",
+                                       "cardParts": [
+                                                     {
+                                                     "style": "ServiceText",
+                                                     "state": "severe",
+                                                     "message": "Severe Delays",
+                                                     "from": "Entire line"
+                                                     }
+                                                     ]
+                                       }
+                                       ]
+                             }
+                             ]
+              },
+              {
+              "style": "Secondary",
+              "cardGroups": [
+                             {
+                             "style": "Status",
+                             "cards": [
+                                       {
+                                       "style": "OverallStatus",
+                                       "message": "Good service on all other lines",
+                                       "cardCount": 1
+                                       }
+                                       ]
+                             }
+                             ]
+              }
+              ]
 }

@@ -1,4 +1,3 @@
-
 import Foundation
 import UIKit
 
@@ -15,12 +14,15 @@ extension UIColor {
     }
     
     static func lineColor(name:String) -> UIColor {
-        var colors: [String:UIColor] = ["Circle": UIColor.init(hex: getStringValue(propertyName:"Circle")),
-                      "District" :UIColor.init(hex: getStringValue(propertyName:"District")),
-                      "Waterloo" :UIColor.init(hex: getStringValue(propertyName:"Waterloo")),
-             "Overground" :UIColor.init(hex: getStringValue(propertyName:"Overground")),
-             "Piccadilly" : UIColor.blue
-        ]
+        let colors: [String:UIColor] =
+            [
+            "Circle": UIColor.init(hex: getStringValue(propertyName:"Circle")),
+            "District" :UIColor.init(hex: getStringValue(propertyName:"District")),
+            "Waterloo" :UIColor.init(hex: getStringValue(propertyName:"Waterloo")),
+            "Overground" :UIColor.init(hex: getStringValue(propertyName:"Overground")),
+            "Bakerloo" :UIColor.init(hex: getStringValue(propertyName:"Bakerloo")),
+            "Piccadilly" : UIColor.blue
+            ]
        
        let n = name.lowercased()
        let result = colors.filter({
@@ -39,10 +41,14 @@ extension UIColor {
         var cString:String = hex.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).uppercased()
         
         if (cString.hasPrefix("#")) {
-            cString = cString.substring(from: cString.characters.index(cString.startIndex, offsetBy: 1))
+            let firstIndex = cString.index(cString.startIndex, offsetBy: 1)
+            let endIndex = cString.index(cString.endIndex, offsetBy: 0)
+            let range = firstIndex..<endIndex
+            cString = String(cString[range])
+            
         }
         
-        if ((cString.characters.count) != 6) {
+        if ((cString.count) != 6) {
             self.init (red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
         } else {
             var rgbValue:UInt32 = 0
