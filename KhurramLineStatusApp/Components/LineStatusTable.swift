@@ -39,22 +39,6 @@ class LineStatusTable : UITableView,UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.setFont(name: self.Johnston100Regular)
     }
     
-    func cleanMessage(message:String) -> String {
-        return message.replacingOccurrences(of: "Underground Station", with: "")
-        .replacingOccurrences(of: "Rail Station", with: "")
-    }
-    
-    func getFriendlyMessages(message:String,cardParts:[CardPart]) -> [String] {
-        var messages = [String]()
-        for l in cardParts {
-            if l is ComplexCardPart {
-                let complexCardPart = l as! ComplexCardPart
-                messages.append( "\(message) \n \(complexCardPart.from) .. \(complexCardPart.to)")
-            }
-        }
-        return messages
-    }
-    
     func addLineStatus(cell:UITableViewCell,lineMessageCard: LineMessageCard) {
         cell.detailTextLabel?.setFont(name: self.Johnston100Medium)
         cell.detailTextLabel?.text = lineMessageCard.message

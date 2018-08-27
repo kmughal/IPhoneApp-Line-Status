@@ -34,16 +34,22 @@ class LineStatusViewController: UIViewController {
         table.viewDidLoad()
         table.separatorStyle = .none
         table.backgroundColor = .blue
-        
-        for cell in table.visibleCells {
-            print("cell")
-            UIView.animate(withDuration: 10.0, delay: 1, options:
-                ([.curveLinear, .repeat]), animations: {() -> Void in
-                
-                    cell.detailTextLabel?.center = CGPoint(x: -200, y: 150)
-                
-            }, completion:  nil)
+    }
+    
+    func cleanMessage(message:String) -> String {
+        return message.replacingOccurrences(of: "Underground Station", with: "")
+            .replacingOccurrences(of: "Rail Station", with: "")
+    }
+    
+    func getFriendlyMessages(message:String,cardParts:[CardPart]) -> [String] {
+        var messages = [String]()
+        for l in cardParts {
+            if l is ComplexCardPart {
+                let complexCardPart = l as! ComplexCardPart
+                messages.append( "\(message) \n \(complexCardPart.from) .. \(complexCardPart.to)")
+            }
         }
+        return messages
     }
     
     func updateDataset(data:LineStatusViewModel) {
@@ -51,6 +57,7 @@ class LineStatusViewController: UIViewController {
             self.view.backgroundColor = .white
             self.removeAllSubViews()
             self.createLineStatusTableView(data:data)
+            
         }
     }
     
@@ -65,9 +72,9 @@ class LineStatusViewController: UIViewController {
         super.viewDidAppear(animated)
         self.view.backgroundColor = UIColor.lightGray
         self.getLineStatus()
-//        Shared.Instance.runCodeInIntervals(interval: 5, code: {
-//            self.getLineStatus()
-//        })
+        Shared.Instance.runCodeInIntervals(interval: 5, code: {
+            self.getLineStatus()
+        })
         self.view.backgroundColor = UIColor.yellow
     }
     
