@@ -34,7 +34,6 @@ class LineStatusTableCell : UITableViewCell  {
         label.frame = CGRect(x: 0, y:  200, width: 100, height: 50)
         label.setFont(name: "Johnston100-Regular")
         label.translatesAutoresizingMaskIntoConstraints = false
-        
         return label
     }()
     

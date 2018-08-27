@@ -47,7 +47,9 @@ class LineStatusTable : UITableView,UITableViewDelegate, UITableViewDataSource {
         cell.backgroundColor = .blue
         cell.textLabel?.textColor = .white
         addLineColor(cell: cell, color: .blue)
+        cell.textLabel?.numberOfLines = 0
         cell.textLabel?.font =  UIFont(name: self.Johnston100Regular, size: 30)
+        
     }
     
     

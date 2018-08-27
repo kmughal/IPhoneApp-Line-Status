@@ -10,6 +10,11 @@
 		0CCBF0BEDCC7F492C11D9839 /* Pods_KhurramLineStatusAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75444F140E508DCF664799BB /* Pods_KhurramLineStatusAppTests.framework */; };
 		1D0EDE69C54F365A0B9EF000 /* Pods_KhurramLineStatusAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D6B3F7275A660019E73BE2 /* Pods_KhurramLineStatusAppUITests.framework */; };
 		57096D8CFD82A56341F0AC57 /* Pods_KhurramLineStatusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC4BDCB6ACA5F83B24CFB9B /* Pods_KhurramLineStatusApp.framework */; };
+		8E16BA6921340C5E002BF443 /* Johnston100-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E16BA6421340C5E002BF443 /* Johnston100-Thin.otf */; };
+		8E16BA6A21340C5E002BF443 /* Johnston100-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E16BA6521340C5E002BF443 /* Johnston100-Regular.otf */; };
+		8E16BA6B21340C5E002BF443 /* Johnston100-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E16BA6621340C5E002BF443 /* Johnston100-Hairline.otf */; };
+		8E16BA6C21340C5E002BF443 /* Johnston100-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E16BA6721340C5E002BF443 /* Johnston100-Light.otf */; };
+		8E16BA6D21340C5E002BF443 /* Johnston100-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E16BA6821340C5E002BF443 /* Johnston100-Medium.otf */; };
 		8E7A139221283C840097D9B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A139121283C840097D9B6 /* AppDelegate.swift */; };
 		8E7A139421283C840097D9B6 /* InitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A139321283C840097D9B6 /* InitController.swift */; };
 		8E7A139721283C840097D9B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A139521283C840097D9B6 /* Main.storyboard */; };
@@ -18,16 +23,6 @@
 		8E7A139F21283C860097D9B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A139D21283C860097D9B6 /* LaunchScreen.storyboard */; };
 		8E7A13AA21283C860097D9B6 /* KhurramLineStatusAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A13A921283C860097D9B6 /* KhurramLineStatusAppTests.swift */; };
 		8E7A13B521283C860097D9B6 /* KhurramLineStatusAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A13B421283C860097D9B6 /* KhurramLineStatusAppUITests.swift */; };
-		8E7A13D021283D7A0097D9B6 /* Johnston100-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A13C621283D790097D9B6 /* Johnston100-Hairline.otf */; };
-		8E7A13D121283D7A0097D9B6 /* Johnston100W03-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A13C721283D790097D9B6 /* Johnston100W03-Thin.ttf */; };
-		8E7A13D221283D7A0097D9B6 /* Johnston100W03-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A13C821283D790097D9B6 /* Johnston100W03-Light.ttf */; };
-		8E7A13D321283D7A0097D9B6 /* Johnston100W03-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A13C921283D790097D9B6 /* Johnston100W03-Medium.ttf */; };
-		8E7A13D421283D7A0097D9B6 /* Johnston100W03-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A13CA21283D790097D9B6 /* Johnston100W03-Regular.ttf */; };
-		8E7A13D521283D7A0097D9B6 /* Johnston100W03-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A13CB21283D790097D9B6 /* Johnston100W03-Hairline.ttf */; };
-		8E7A13D621283D7A0097D9B6 /* Johnston100-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A13CC21283D790097D9B6 /* Johnston100-Thin.otf */; };
-		8E7A13D721283D7A0097D9B6 /* Johnston100-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A13CD21283D790097D9B6 /* Johnston100-Light.otf */; };
-		8E7A13D821283D7A0097D9B6 /* Johnston100-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A13CE21283D790097D9B6 /* Johnston100-Medium.otf */; };
-		8E7A13D921283D7A0097D9B6 /* Johnston100-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A13CF21283D7A0097D9B6 /* Johnston100-Regular.otf */; };
 		8E7A13DB21283FDA0097D9B6 /* LineStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A13DA21283FDA0097D9B6 /* LineStatusViewController.swift */; };
 		8EC01D172132BC280060E8FE /* DistruptionsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC01D162132BC280060E8FE /* DistruptionsBuilder.swift */; };
 		8EC01D192132BDD40060E8FE /* GoodServicesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC01D182132BDD40060E8FE /* GoodServicesBuilder.swift */; };
@@ -85,6 +80,11 @@
 		5569BB3AD8C1BEAFF87224B7 /* Pods-KhurramLineStatusAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhurramLineStatusAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KhurramLineStatusAppUITests/Pods-KhurramLineStatusAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		75444F140E508DCF664799BB /* Pods_KhurramLineStatusAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KhurramLineStatusAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		771AB1C99E6558FA0D554BDF /* Pods-KhurramLineStatusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhurramLineStatusApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-KhurramLineStatusApp/Pods-KhurramLineStatusApp.release.xcconfig"; sourceTree = "<group>"; };
+		8E16BA6421340C5E002BF443 /* Johnston100-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100-Thin.otf"; path = "../../../../../workplace/line-status-tfl-gov-uk/Source/tfl.linestatus.component/wwwroot/fonts/OTF/Johnston100-Thin.otf"; sourceTree = "<group>"; };
+		8E16BA6521340C5E002BF443 /* Johnston100-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100-Regular.otf"; path = "../../../../../workplace/line-status-tfl-gov-uk/Source/tfl.linestatus.component/wwwroot/fonts/OTF/Johnston100-Regular.otf"; sourceTree = "<group>"; };
+		8E16BA6621340C5E002BF443 /* Johnston100-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100-Hairline.otf"; path = "../../../../../workplace/line-status-tfl-gov-uk/Source/tfl.linestatus.component/wwwroot/fonts/OTF/Johnston100-Hairline.otf"; sourceTree = "<group>"; };
+		8E16BA6721340C5E002BF443 /* Johnston100-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100-Light.otf"; path = "../../../../../workplace/line-status-tfl-gov-uk/Source/tfl.linestatus.component/wwwroot/fonts/OTF/Johnston100-Light.otf"; sourceTree = "<group>"; };
+		8E16BA6821340C5E002BF443 /* Johnston100-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100-Medium.otf"; path = "../../../../../workplace/line-status-tfl-gov-uk/Source/tfl.linestatus.component/wwwroot/fonts/OTF/Johnston100-Medium.otf"; sourceTree = "<group>"; };
 		8E7A138E21283C840097D9B6 /* KhurramLineStatusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KhurramLineStatusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7A139121283C840097D9B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E7A139321283C840097D9B6 /* InitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitController.swift; sourceTree = "<group>"; };
@@ -99,16 +99,6 @@
 		8E7A13B021283C860097D9B6 /* KhurramLineStatusAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KhurramLineStatusAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7A13B421283C860097D9B6 /* KhurramLineStatusAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhurramLineStatusAppUITests.swift; sourceTree = "<group>"; };
 		8E7A13B621283C860097D9B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E7A13C621283D790097D9B6 /* Johnston100-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100-Hairline.otf"; path = "../../../LineStatusTemplate/LineStatusTemplateApp/LineStatusTemplateApp/Fonts/Johnston100-Hairline.otf"; sourceTree = "<group>"; };
-		8E7A13C721283D790097D9B6 /* Johnston100W03-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100W03-Thin.ttf"; path = "../../../LineStatusTemplate/LineStatusTemplateApp/LineStatusTemplateApp/Fonts/Johnston100W03-Thin.ttf"; sourceTree = "<group>"; };
-		8E7A13C821283D790097D9B6 /* Johnston100W03-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100W03-Light.ttf"; path = "../../../LineStatusTemplate/LineStatusTemplateApp/LineStatusTemplateApp/Fonts/Johnston100W03-Light.ttf"; sourceTree = "<group>"; };
-		8E7A13C921283D790097D9B6 /* Johnston100W03-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100W03-Medium.ttf"; path = "../../../LineStatusTemplate/LineStatusTemplateApp/LineStatusTemplateApp/Fonts/Johnston100W03-Medium.ttf"; sourceTree = "<group>"; };
-		8E7A13CA21283D790097D9B6 /* Johnston100W03-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100W03-Regular.ttf"; path = "../../../LineStatusTemplate/LineStatusTemplateApp/LineStatusTemplateApp/Fonts/Johnston100W03-Regular.ttf"; sourceTree = "<group>"; };
-		8E7A13CB21283D790097D9B6 /* Johnston100W03-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100W03-Hairline.ttf"; path = "../../../LineStatusTemplate/LineStatusTemplateApp/LineStatusTemplateApp/Fonts/Johnston100W03-Hairline.ttf"; sourceTree = "<group>"; };
-		8E7A13CC21283D790097D9B6 /* Johnston100-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100-Thin.otf"; path = "../../../LineStatusTemplate/LineStatusTemplateApp/LineStatusTemplateApp/Fonts/Johnston100-Thin.otf"; sourceTree = "<group>"; };
-		8E7A13CD21283D790097D9B6 /* Johnston100-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100-Light.otf"; path = "../../../LineStatusTemplate/LineStatusTemplateApp/LineStatusTemplateApp/Fonts/Johnston100-Light.otf"; sourceTree = "<group>"; };
-		8E7A13CE21283D790097D9B6 /* Johnston100-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100-Medium.otf"; path = "../../../LineStatusTemplate/LineStatusTemplateApp/LineStatusTemplateApp/Fonts/Johnston100-Medium.otf"; sourceTree = "<group>"; };
-		8E7A13CF21283D7A0097D9B6 /* Johnston100-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100-Regular.otf"; path = "../../../LineStatusTemplate/LineStatusTemplateApp/LineStatusTemplateApp/Fonts/Johnston100-Regular.otf"; sourceTree = "<group>"; };
 		8E7A13DA21283FDA0097D9B6 /* LineStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineStatusViewController.swift; sourceTree = "<group>"; };
 		8EC01D162132BC280060E8FE /* DistruptionsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistruptionsBuilder.swift; sourceTree = "<group>"; };
 		8EC01D182132BDD40060E8FE /* GoodServicesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServicesBuilder.swift; sourceTree = "<group>"; };
@@ -257,16 +247,11 @@
 		8E7A13C521283D400097D9B6 /* CustomFonts */ = {
 			isa = PBXGroup;
 			children = (
-				8E7A13C621283D790097D9B6 /* Johnston100-Hairline.otf */,
-				8E7A13CD21283D790097D9B6 /* Johnston100-Light.otf */,
-				8E7A13CE21283D790097D9B6 /* Johnston100-Medium.otf */,
-				8E7A13CF21283D7A0097D9B6 /* Johnston100-Regular.otf */,
-				8E7A13CC21283D790097D9B6 /* Johnston100-Thin.otf */,
-				8E7A13CB21283D790097D9B6 /* Johnston100W03-Hairline.ttf */,
-				8E7A13C821283D790097D9B6 /* Johnston100W03-Light.ttf */,
-				8E7A13C921283D790097D9B6 /* Johnston100W03-Medium.ttf */,
-				8E7A13CA21283D790097D9B6 /* Johnston100W03-Regular.ttf */,
-				8E7A13C721283D790097D9B6 /* Johnston100W03-Thin.ttf */,
+				8E16BA6621340C5E002BF443 /* Johnston100-Hairline.otf */,
+				8E16BA6721340C5E002BF443 /* Johnston100-Light.otf */,
+				8E16BA6821340C5E002BF443 /* Johnston100-Medium.otf */,
+				8E16BA6521340C5E002BF443 /* Johnston100-Regular.otf */,
+				8E16BA6421340C5E002BF443 /* Johnston100-Thin.otf */,
 			);
 			name = CustomFonts;
 			sourceTree = "<group>";
@@ -529,19 +514,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E7A13D021283D7A0097D9B6 /* Johnston100-Hairline.otf in Resources */,
-				8E7A13D621283D7A0097D9B6 /* Johnston100-Thin.otf in Resources */,
-				8E7A13D521283D7A0097D9B6 /* Johnston100W03-Hairline.ttf in Resources */,
-				8E7A13D221283D7A0097D9B6 /* Johnston100W03-Light.ttf in Resources */,
-				8E7A13D721283D7A0097D9B6 /* Johnston100-Light.otf in Resources */,
-				8E7A13D121283D7A0097D9B6 /* Johnston100W03-Thin.ttf in Resources */,
-				8E7A13D921283D7A0097D9B6 /* Johnston100-Regular.otf in Resources */,
-				8E7A13D421283D7A0097D9B6 /* Johnston100W03-Regular.ttf in Resources */,
 				8E7A139F21283C860097D9B6 /* LaunchScreen.storyboard in Resources */,
 				8E7A139C21283C860097D9B6 /* Assets.xcassets in Resources */,
-				8E7A13D321283D7A0097D9B6 /* Johnston100W03-Medium.ttf in Resources */,
 				8E7A139721283C840097D9B6 /* Main.storyboard in Resources */,
-				8E7A13D821283D7A0097D9B6 /* Johnston100-Medium.otf in Resources */,
+				8E16BA6921340C5E002BF443 /* Johnston100-Thin.otf in Resources */,
+				8E16BA6B21340C5E002BF443 /* Johnston100-Hairline.otf in Resources */,
+				8E16BA6A21340C5E002BF443 /* Johnston100-Regular.otf in Resources */,
+				8E16BA6C21340C5E002BF443 /* Johnston100-Light.otf in Resources */,
+				8E16BA6D21340C5E002BF443 /* Johnston100-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
