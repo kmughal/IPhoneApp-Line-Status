@@ -21,8 +21,8 @@ class JsonClient {
         let decoder = JSONDecoder()
         var result:T
         do {
-            let jsonString = try JSONSerialization.jsonObject(with:
-                data, options: [])
+//            let jsonString = try JSONSerialization.jsonObject(with:
+//                data, options: [])
             
              result = try decoder.decode(T.self, from: data)
             return result
@@ -36,7 +36,6 @@ class JsonClient {
         return Observable.create {
             observer in
             let url = URL(string:url)
-            print(url)
             let task = URLSession.shared.dataTask(with: url!) {
                 data,response,error in
                 if let dataResponse = data {
