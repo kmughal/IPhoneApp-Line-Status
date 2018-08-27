@@ -41,7 +41,7 @@ class LineStatusTable : UITableView,UITableViewDelegate, UITableViewDataSource {
     
     func addLineStatus(cell:UITableViewCell,lineMessageCard: LineMessageCard) {
         cell.detailTextLabel?.setFont(name: self.Johnston100Medium)
-        cell.detailTextLabel?.text = lineMessageCard.message
+        cell.detailTextLabel?.text = "Loading ..."
     }
     
     func addOverallStatusMessage(cell:UITableViewCell,message:String) {

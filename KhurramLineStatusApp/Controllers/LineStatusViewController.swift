@@ -56,7 +56,7 @@ class LineStatusViewController: UIViewController {
         super.viewDidAppear(animated)
         self.view.backgroundColor = UIColor.lightGray
         self.getLineStatus()
-        Shared.Instance.runCodeInIntervals(interval: 500, code: {
+        Shared.Instance.runCodeInIntervals(interval: 100, code: {
             self.getLineStatus()
         })
         self.view.backgroundColor = UIColor.yellow
