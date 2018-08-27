@@ -35,6 +35,15 @@ class LineStatusViewController: UIViewController {
         table.separatorStyle = .none
         table.backgroundColor = .blue
         
+        for cell in table.visibleCells {
+            print("cell")
+            UIView.animate(withDuration: 10.0, delay: 1, options:
+                ([.curveLinear, .repeat]), animations: {() -> Void in
+                
+                    cell.detailTextLabel?.center = CGPoint(x: -200, y: 150)
+                
+            }, completion:  nil)
+        }
     }
     
     func updateDataset(data:LineStatusViewModel) {
@@ -56,9 +65,9 @@ class LineStatusViewController: UIViewController {
         super.viewDidAppear(animated)
         self.view.backgroundColor = UIColor.lightGray
         self.getLineStatus()
-        Shared.Instance.runCodeInIntervals(interval: 5, code: {
-            self.getLineStatus()
-        })
+//        Shared.Instance.runCodeInIntervals(interval: 5, code: {
+//            self.getLineStatus()
+//        })
         self.view.backgroundColor = UIColor.yellow
     }
     

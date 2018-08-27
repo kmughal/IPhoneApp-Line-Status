@@ -1,6 +1,7 @@
 import Foundation
 import UIKit
 
+
 class LineStatusTable : UITableView,UITableViewDelegate, UITableViewDataSource {
     private let cellId = "LineStatusTableViewCell"
     public var viewModel = LineStatusViewModel.init(style: "", cardPacks: [CardPack]())
@@ -38,9 +39,25 @@ class LineStatusTable : UITableView,UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.setFont(name: self.Johnston100Regular)
     }
     
-    func addLineStatus(cell:UITableViewCell,message:String) {
-        cell.detailTextLabel?.text = message
+    func cleanMessage(message:String) -> String {
+        return message.replacingOccurrences(of: "Underground Station", with: "")
+        .replacingOccurrences(of: "Rail Station", with: "")
+    }
+    
+    func getFriendlyMessages(message:String,cardParts:[CardPart]) -> [String] {
+        var messages = [String]()
+        for l in cardParts {
+            if l is ComplexCardPart {
+                let complexCardPart = l as! ComplexCardPart
+                messages.append( "\(message) \n \(complexCardPart.from) .. \(complexCardPart.to)")
+            }
+        }
+        return messages
+    }
+    
+    func addLineStatus(cell:UITableViewCell,lineMessageCard: LineMessageCard) {
         cell.detailTextLabel?.setFont(name: self.Johnston100Medium)
+        cell.detailTextLabel?.text = lineMessageCard.message
     }
     
     func addOverallStatusMessage(cell:UITableViewCell,message:String) {
@@ -49,7 +66,6 @@ class LineStatusTable : UITableView,UITableViewDelegate, UITableViewDataSource {
         addLineColor(cell: cell, color: .blue)
         cell.textLabel?.numberOfLines = 0
         cell.textLabel?.font =  UIFont(name: self.Johnston100Regular, size: 30)
-        
     }
     
     
@@ -57,17 +73,25 @@ class LineStatusTable : UITableView,UITableViewDelegate, UITableViewDataSource {
         
         let item = viewModel.cardPacks[indexPath.section].cardGroups[0].cards[indexPath.row]
         let cell = UITableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: cellId)
+        
         if item is LineMessageCard {
             let lineMessage = (item as! LineMessageCard)
             addLineName(cell: cell, name: lineMessage.line)
-            addLineStatus(cell: cell, message: lineMessage.name)
+            addLineStatus(cell: cell, lineMessageCard: lineMessage)
             addLineColor(cell: cell, color: UIColor.lineColor(name: lineMessage.line))
         } else if item is OverallStatusCard {
              let overAllStatus = (item as! OverallStatusCard)
              addOverallStatusMessage(cell: cell, message: overAllStatus.message)
         }
        
-        
+       
         return cell
     }
 }
+
+
+//import MarqueeLabel
+//        var lbl = MarqueeLabel(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 150), duration: 100.0, andFadeLength: 5.0)
+//        lbl?.text = messages.joined()
+//        cell.addSubview(lbl!)
+

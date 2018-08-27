@@ -22,6 +22,7 @@ extension UIColor {
             "Overground" :UIColor.init(hex: getStringValue(propertyName:"Overground")),
             "Bakerloo" :UIColor.init(hex: getStringValue(propertyName:"Bakerloo")),
             "Hammer" :UIColor.init(hex: getStringValue(propertyName:"Hammer")),
+            "Victoria" :UIColor.init(hex: getStringValue(propertyName:"Victoria")),
             "Piccadilly" : UIColor.blue
             ]
        

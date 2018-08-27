@@ -49,8 +49,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4V-33-9Nl">
-                                <rect key="frame" x="22.5" y="207" width="330.5" height="198"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4V-33-9Nl">
+                                <rect key="frame" x="18" y="218" width="330.5" height="198"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Loading please wait">
                                         <attributes>
@@ -64,9 +64,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="O4V-33-9Nl" firstAttribute="top" secondItem="M9X-R4-WaN" secondAttribute="top" constant="187" id="TCy-na-CgB"/>
-                            <constraint firstItem="O4V-33-9Nl" firstAttribute="centerX" secondItem="enD-hC-UmQ" secondAttribute="centerX" id="eNY-wk-5iE"/>
-                            <constraint firstItem="M9X-R4-WaN" firstAttribute="bottom" secondItem="O4V-33-9Nl" secondAttribute="bottom" constant="262" id="ubd-u8-XGs"/>
+                            <constraint firstItem="O4V-33-9Nl" firstAttribute="centerY" secondItem="M9X-R4-WaN" secondAttribute="centerY" constant="-26.5" id="Dqy-hD-LmL"/>
+                            <constraint firstItem="O4V-33-9Nl" firstAttribute="centerX" secondItem="M9X-R4-WaN" secondAttribute="centerX" constant="-4.25" id="k4z-Ve-nXN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M9X-R4-WaN"/>
                     </view>

@@ -2,15 +2,9 @@ import Foundation
 
 class Disruption : Codable {
     
-    var category:String
-    var categoryDescription: String
-    var description: String
-    var additionalInfo :String
+    var affectedRoutes : [AffectedRoute]?
     
-    init(category:String,categoryDescription:String,description:String,additionalInfo:String) {
-        self.category = category
-        self.categoryDescription = categoryDescription
-        self.description = description
-        self.additionalInfo = additionalInfo
+    init(affectedRoutes : [AffectedRoute]?) {
+        self.affectedRoutes = affectedRoutes
     }
 }

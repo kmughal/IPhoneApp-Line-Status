@@ -7,7 +7,8 @@ target 'KhurramLineStatusApp' do
 
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
-
+  pod 'MarqueeLabel'
+  
   target 'KhurramLineStatusAppTests' do
     inherit! :search_paths
     # Pods for testing

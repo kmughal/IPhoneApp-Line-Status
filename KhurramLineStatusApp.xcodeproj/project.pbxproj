@@ -197,6 +197,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		8E4E083A2134435900C702EA /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A139521283C840097D9B6 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
 		8E7A138521283C840097D9B6 = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +230,7 @@
 		8E7A139021283C840097D9B6 /* KhurramLineStatusApp */ = {
 			isa = PBXGroup;
 			children = (
+				8E4E083A2134435900C702EA /* StoryBoard */,
 				8E4E082E213437B800C702EA /* Protocols */,
 				8EC01D222132FAA10060E8FE /* Components */,
 				8EC01D1D2132F9CF0060E8FE /* Extensions */,
@@ -236,7 +245,6 @@
 				8EC43C692128801D00FBB344 /* Api */,
 				8E7A13C521283D400097D9B6 /* CustomFonts */,
 				8E7A139121283C840097D9B6 /* AppDelegate.swift */,
-				8E7A139521283C840097D9B6 /* Main.storyboard */,
 				8E7A139B21283C860097D9B6 /* Assets.xcassets */,
 				8E7A139D21283C860097D9B6 /* LaunchScreen.storyboard */,
 				8E7A13A021283C860097D9B6 /* Info.plist */,
@@ -571,11 +579,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-KhurramLineStatusApp/Pods-KhurramLineStatusApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
