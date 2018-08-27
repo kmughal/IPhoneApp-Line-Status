@@ -13,7 +13,7 @@ class DisruptionsBuilder {
             
             var cards = [Card]()
             for line in disruptedLines {
-                cards.append(Card.init(
+                cards.append(LineMessageCard.init(
                     style: CardStyles.LineMessage,
                     line: line.name,
                     name: line.lineStatuses[0].statusSeverityDescription))

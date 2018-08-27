@@ -15,6 +15,11 @@
 		8E16BA6B21340C5E002BF443 /* Johnston100-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E16BA6621340C5E002BF443 /* Johnston100-Hairline.otf */; };
 		8E16BA6C21340C5E002BF443 /* Johnston100-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E16BA6721340C5E002BF443 /* Johnston100-Light.otf */; };
 		8E16BA6D21340C5E002BF443 /* Johnston100-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E16BA6821340C5E002BF443 /* Johnston100-Medium.otf */; };
+		8E4E0830213437C900C702EA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E082F213437C900C702EA /* Card.swift */; };
+		8E4E08322134380100C702EA /* OverallStatusCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E08312134380100C702EA /* OverallStatusCard.swift */; };
+		8E4E083521343DB000C702EA /* CardPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E083421343DB000C702EA /* CardPart.swift */; };
+		8E4E083721343E3F00C702EA /* SimpleTextCardPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E083621343E3F00C702EA /* SimpleTextCardPart.swift */; };
+		8E4E083921343EDC00C702EA /* ComplexCardPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E083821343EDC00C702EA /* ComplexCardPart.swift */; };
 		8E7A139221283C840097D9B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A139121283C840097D9B6 /* AppDelegate.swift */; };
 		8E7A139421283C840097D9B6 /* InitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A139321283C840097D9B6 /* InitController.swift */; };
 		8E7A139721283C840097D9B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A139521283C840097D9B6 /* Main.storyboard */; };
@@ -32,9 +37,8 @@
 		8E9464CE213434BA0015022B /* LineStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464C8213434BA0015022B /* LineStatus.swift */; };
 		8E9464D0213434E70015022B /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464CF213434E70015022B /* ApiService.swift */; };
 		8E9464D52134352A0015022B /* CardPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464D12134352A0015022B /* CardPack.swift */; };
-		8E9464D62134352A0015022B /* CardPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464D22134352A0015022B /* CardPart.swift */; };
 		8E9464D72134352A0015022B /* CardGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464D32134352A0015022B /* CardGroup.swift */; };
-		8E9464D82134352A0015022B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464D42134352A0015022B /* Card.swift */; };
+		8E9464D82134352A0015022B /* LineMessageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464D42134352A0015022B /* LineMessageCard.swift */; };
 		8E9464DC213435550015022B /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464D9213435550015022B /* ColorExtensions.swift */; };
 		8E9464DD213435550015022B /* LabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464DA213435550015022B /* LabelExtensions.swift */; };
 		8E9464DE213435560015022B /* LayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464DB213435550015022B /* LayerExtensions.swift */; };
@@ -85,6 +89,12 @@
 		8E16BA6621340C5E002BF443 /* Johnston100-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100-Hairline.otf"; path = "../../../../../workplace/line-status-tfl-gov-uk/Source/tfl.linestatus.component/wwwroot/fonts/OTF/Johnston100-Hairline.otf"; sourceTree = "<group>"; };
 		8E16BA6721340C5E002BF443 /* Johnston100-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100-Light.otf"; path = "../../../../../workplace/line-status-tfl-gov-uk/Source/tfl.linestatus.component/wwwroot/fonts/OTF/Johnston100-Light.otf"; sourceTree = "<group>"; };
 		8E16BA6821340C5E002BF443 /* Johnston100-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100-Medium.otf"; path = "../../../../../workplace/line-status-tfl-gov-uk/Source/tfl.linestatus.component/wwwroot/fonts/OTF/Johnston100-Medium.otf"; sourceTree = "<group>"; };
+		8E4E082F213437C900C702EA /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		8E4E08312134380100C702EA /* OverallStatusCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverallStatusCard.swift; sourceTree = "<group>"; };
+		8E4E083321343BAF00C702EA /* line-status.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = "line-status.geojson"; sourceTree = "<group>"; };
+		8E4E083421343DB000C702EA /* CardPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPart.swift; sourceTree = "<group>"; };
+		8E4E083621343E3F00C702EA /* SimpleTextCardPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextCardPart.swift; sourceTree = "<group>"; };
+		8E4E083821343EDC00C702EA /* ComplexCardPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexCardPart.swift; sourceTree = "<group>"; };
 		8E7A138E21283C840097D9B6 /* KhurramLineStatusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KhurramLineStatusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7A139121283C840097D9B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E7A139321283C840097D9B6 /* InitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitController.swift; sourceTree = "<group>"; };
@@ -108,9 +118,8 @@
 		8E9464C8213434BA0015022B /* LineStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineStatus.swift; path = Api/Entities/LineStatus.swift; sourceTree = "<group>"; };
 		8E9464CF213434E70015022B /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiService.swift; path = Services/ApiService.swift; sourceTree = "<group>"; };
 		8E9464D12134352A0015022B /* CardPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardPack.swift; path = Entities/CardPack.swift; sourceTree = "<group>"; };
-		8E9464D22134352A0015022B /* CardPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardPart.swift; path = Entities/CardPart.swift; sourceTree = "<group>"; };
 		8E9464D32134352A0015022B /* CardGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardGroup.swift; path = Entities/CardGroup.swift; sourceTree = "<group>"; };
-		8E9464D42134352A0015022B /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Entities/Card.swift; sourceTree = "<group>"; };
+		8E9464D42134352A0015022B /* LineMessageCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineMessageCard.swift; path = Entities/LineMessageCard.swift; sourceTree = "<group>"; };
 		8E9464D9213435550015022B /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorExtensions.swift; path = Extensions/ColorExtensions.swift; sourceTree = "<group>"; };
 		8E9464DA213435550015022B /* LabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LabelExtensions.swift; path = Extensions/LabelExtensions.swift; sourceTree = "<group>"; };
 		8E9464DB213435550015022B /* LayerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayerExtensions.swift; path = Extensions/LayerExtensions.swift; sourceTree = "<group>"; };
@@ -179,6 +188,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8E4E082E213437B800C702EA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8E4E082F213437C900C702EA /* Card.swift */,
+				8E4E083421343DB000C702EA /* CardPart.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		8E7A138521283C840097D9B6 = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +222,7 @@
 		8E7A139021283C840097D9B6 /* KhurramLineStatusApp */ = {
 			isa = PBXGroup;
 			children = (
+				8E4E082E213437B800C702EA /* Protocols */,
 				8EC01D222132FAA10060E8FE /* Components */,
 				8EC01D1D2132F9CF0060E8FE /* Extensions */,
 				8EC01D1A2132D6710060E8FE /* Commons */,
@@ -347,6 +366,7 @@
 			children = (
 				8EE42DD42131B8AA00631B36 /* disruption.geojson */,
 				8EE42DFA2131C34E00631B36 /* good-service.geojson */,
+				8E4E083321343BAF00C702EA /* line-status.geojson */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -363,10 +383,12 @@
 		8EE42DD82131BCDF00631B36 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				8E9464D42134352A0015022B /* Card.swift */,
+				8E9464D42134352A0015022B /* LineMessageCard.swift */,
 				8E9464D32134352A0015022B /* CardGroup.swift */,
 				8E9464D12134352A0015022B /* CardPack.swift */,
-				8E9464D22134352A0015022B /* CardPart.swift */,
+				8E4E08312134380100C702EA /* OverallStatusCard.swift */,
+				8E4E083621343E3F00C702EA /* SimpleTextCardPart.swift */,
+				8E4E083821343EDC00C702EA /* ComplexCardPart.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -629,8 +651,8 @@
 				8E9464CE213434BA0015022B /* LineStatus.swift in Sources */,
 				8EE42DDD2131BE3E00631B36 /* CardPackStyles.swift in Sources */,
 				8EC01D172132BC280060E8FE /* DistruptionsBuilder.swift in Sources */,
-				8E9464D62134352A0015022B /* CardPart.swift in Sources */,
 				8E9464D52134352A0015022B /* CardPack.swift in Sources */,
+				8E4E0830213437C900C702EA /* Card.swift in Sources */,
 				8E9464C9213434BA0015022B /* ServiceType.swift in Sources */,
 				8EE42DED2131BF3C00631B36 /* ApiLineStatusViewModel.swift in Sources */,
 				8E7A13DB21283FDA0097D9B6 /* LineStatusViewController.swift in Sources */,
@@ -639,7 +661,8 @@
 				8E7A139421283C840097D9B6 /* InitController.swift in Sources */,
 				8E9464CA213434BA0015022B /* Line.swift in Sources */,
 				8EE42DD72131B91100631B36 /* LineStatusViewModel.swift in Sources */,
-				8E9464D82134352A0015022B /* Card.swift in Sources */,
+				8E9464D82134352A0015022B /* LineMessageCard.swift in Sources */,
+				8E4E083921343EDC00C702EA /* ComplexCardPart.swift in Sources */,
 				8E9464DE213435560015022B /* LayerExtensions.swift in Sources */,
 				8EC226072131821C00C1B37B /* ApiLineStatusViewModelBuilder.swift in Sources */,
 				8EC01D28213309720060E8FE /* LineStatusTabelCell.swift in Sources */,
@@ -649,16 +672,19 @@
 				8EE42DDF2131BE5C00631B36 /* CardGroupStyles.swift in Sources */,
 				8EE91819213433B10090C280 /* ApiEndPoints.swift in Sources */,
 				8EE42DDB2131BD0400631B36 /* SeverityCodes.swift in Sources */,
+				8E4E083721343E3F00C702EA /* SimpleTextCardPart.swift in Sources */,
 				8EC01D192132BDD40060E8FE /* GoodServicesBuilder.swift in Sources */,
 				8E9464DD213435550015022B /* LabelExtensions.swift in Sources */,
 				8EE42DFC2131C3B300631B36 /* LineStatusBuilder.swift in Sources */,
 				8EC01D2B2133098E0060E8FE /* LineStatusCellField.swift in Sources */,
+				8E4E08322134380100C702EA /* OverallStatusCard.swift in Sources */,
 				8EE42DF72131C2C700631B36 /* ServiceTypes.swift in Sources */,
 				8E9464CB213434BA0015022B /* AffectedRoute.swift in Sources */,
 				8EC01D242132FAAF0060E8FE /* LineStatusTable.swift in Sources */,
 				8EE91818213433B10090C280 /* JsonClient.swift in Sources */,
 				8EE42DE12131BE7A00631B36 /* CardPartStyles.swift in Sources */,
 				8E9464DC213435550015022B /* ColorExtensions.swift in Sources */,
+				8E4E083521343DB000C702EA /* CardPart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

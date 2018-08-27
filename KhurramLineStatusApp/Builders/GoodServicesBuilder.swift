@@ -9,10 +9,10 @@ class GoodServicesBuilder {
                     style: CardPackStyles.Secondary,
                     cardGroups: [CardGroup(
                         style: CardGroupStyles.Status,
-                        cards:[Card(style:
+                        cards:[OverallStatusCard(style:
                             CardStyles.OverallStatus,
-                                    line: "Good service on all other lines",
-                                    name: "")])]))
+                                    message: "Good service on all other lines"
+                                   )])]))
         }
         
         return vm

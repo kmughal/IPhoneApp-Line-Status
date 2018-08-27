@@ -57,12 +57,17 @@ class LineStatusTable : UITableView,UITableViewDelegate, UITableViewDataSource {
         
         let item = viewModel.cardPacks[indexPath.section].cardGroups[0].cards[indexPath.row]
         let cell = UITableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: cellId)
-        addLineName(cell: cell, name: item.line)
-        addLineStatus(cell: cell, message: item.name)
-        addLineColor(cell: cell, color: UIColor.lineColor(name: item.line))
-        if item.style == CardStyles.OverallStatus {
-            addOverallStatusMessage(cell: cell, message: item.line)
+        if item is LineMessageCard {
+            let lineMessage = (item as! LineMessageCard)
+            addLineName(cell: cell, name: lineMessage.line)
+            addLineStatus(cell: cell, message: lineMessage.name)
+            addLineColor(cell: cell, color: UIColor.lineColor(name: lineMessage.line))
+        } else if item is OverallStatusCard {
+             let overAllStatus = (item as! OverallStatusCard)
+             addOverallStatusMessage(cell: cell, message: overAllStatus.message)
         }
+       
+        
         return cell
     }
 }
