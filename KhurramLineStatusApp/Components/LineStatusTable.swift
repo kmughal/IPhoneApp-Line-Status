@@ -110,9 +110,10 @@ class LineStatusTable : UITableView,UITableViewDelegate, UITableViewDataSource {
 
         let lastRowIndex = tableView.numberOfRows(inSection: 0)
         if indexPath.row == lastRowIndex - 1 {
-            Shared.Instance.runCodeInIntervals(interval: 5, code: {
+             var counters = Array.init(repeating: 0, count: indexPath.row + 1)
+            Shared.Instance.runCodeInIntervals(interval: 2,
+            code: {
                 Shared.Instance.updateUI {
-                     var counters = Array.init(repeating: 0, count: indexPath.row + 1)
                     var messages = self.flatMessages()
                     for index in 0..<tableView.visibleCells.count - 1 {
                         tableView.visibleCells[index].detailTextLabel?.text = messages[index].messages[counters[index]]
@@ -120,10 +121,8 @@ class LineStatusTable : UITableView,UITableViewDelegate, UITableViewDataSource {
                     }
                     
                     for index in 0..<counters.count {
-                        if counters[index] + 1 >= messages[index].messages.count {
-                            counters[index] = -1
-                        }
-                        counters[index] = counters[index] + 1
+                        counters[index] = (counters[index] + 1 >= messages[index].messages.count) ?
+                            0 : (counters[index] + 1)
                     }
                 }
             })
