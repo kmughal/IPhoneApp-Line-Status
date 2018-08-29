@@ -23,7 +23,6 @@ class ApiLineStatusViewModelBuilder {
                         networkStatus: networkStatus,
                         hasDisruptions: ApiLineStatusViewModel.hasDelays(ls: lines),
                         hasGoodService: ApiLineStatusViewModel.hasAtleastOneGoodService(ls: lines))
-                    
             }
     }
 }

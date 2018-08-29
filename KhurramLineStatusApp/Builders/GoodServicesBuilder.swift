@@ -2,7 +2,6 @@ import Foundation
 
 class GoodServicesBuilder {
     
-    
     private func addOverallStatus(vm:LineStatusViewModel,cards: [Card]) -> LineStatusViewModel {
         vm.addCardPack(
             cardPack: CardPack(

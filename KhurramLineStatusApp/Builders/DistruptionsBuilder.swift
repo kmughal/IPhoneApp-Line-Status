@@ -10,8 +10,8 @@ class DisruptionsBuilder {
         if apiVm.hasDisruptions {
             
             let disruptedLines = getDisruptedLines(apiVm: apiVm)
-            
             var cards = [Card]()
+            
             for line in disruptedLines {
                 cards.append(LineMessageCard.init(
                     style: CardStyles.LineMessage,

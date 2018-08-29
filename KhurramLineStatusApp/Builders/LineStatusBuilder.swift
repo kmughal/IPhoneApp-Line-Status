@@ -12,17 +12,15 @@ class LineStatusBuilder {
     }
     
     func initApiViewModel() -> Void {
-         self.apiViewModelBuilder.build()
-        .subscribe(onNext: { r in
-            self.apiViewModel = r
-        }, onError: nil, onCompleted: nil, onDisposed: nil)
+        self.apiViewModelBuilder.build()
+            .subscribe(onNext: { r in
+                self.apiViewModel = r
+            }, onError: nil, onCompleted: nil, onDisposed: nil)
     }
     
     func build() -> Observable<LineStatusViewModel> {
-       
         return Observable.create({
             observer in
-            
             self.apiViewModelBuilder.build()
                 .subscribe({ r in
                     if let result = r.element {
@@ -36,5 +34,4 @@ class LineStatusBuilder {
                 })
         })
     }
-    
 }
