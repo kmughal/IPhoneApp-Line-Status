@@ -76,22 +76,24 @@ class LineStatusTable : UITableView,UITableViewDelegate, UITableViewDataSource {
         let item = viewModel.cardPacks[indexPath.section].cardGroups[0].cards[indexPath.row]
         let cell = UITableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: cellId)
         
-        if item is LineMessageCard {
-            let lineMessage = (item as! LineMessageCard)
-            addLineName(cell: cell, name: lineMessage.line)
-            addLineStatus(cell: cell, lineMessageCard: lineMessage)
-            addLineColor(cell: cell, color: UIColor.lineColor(name: lineMessage.line))
-        } else if item is OverallStatusCard {
-             let overAllStatus = (item as! OverallStatusCard)
-             addOverallStatusMessage(cell: cell, message: overAllStatus.message)
-        } else if item is OverallGoodStatusCard {
-            let overAllStatus = (item as! OverallGoodStatusCard)
-            addOverallGoodStatusMessage(cell: cell, message: overAllStatus.message)
-        } else if item is OverallGoodStatusServiceModesCard {
-            let entry = (item as! OverallGoodStatusServiceModesCard)
-            addOverallGoodStatusServiceModesMessage(cell: cell, message: entry.message)
+        switch item {
+            case let lineMessage as LineMessageCard:
+                    addLineName(cell: cell, name: lineMessage.line)
+                    addLineStatus(cell: cell, lineMessageCard: lineMessage)
+                    addLineColor(cell: cell, color: UIColor.lineColor(name: lineMessage.line))
+                break
+            case let overallStatus as OverallStatusCard:
+                    addOverallStatusMessage(cell: cell, message: overallStatus.message)
+                break
+            
+            case let overallGooStatus as OverallGoodStatusCard:
+                addOverallGoodStatusMessage(cell: cell, message: overallGooStatus.message)
+                break
+            case let overallGoodStatusModes as OverallGoodStatusServiceModesCard:
+                addOverallGoodStatusServiceModesMessage(cell: cell, message: overallGoodStatusModes.message)
+            default:
+                print("default is empty")
         }
-       
         return cell
     }
     
