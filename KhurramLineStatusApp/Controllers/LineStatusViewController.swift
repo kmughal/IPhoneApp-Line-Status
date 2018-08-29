@@ -14,7 +14,7 @@ class LineStatusViewController: UIViewController {
     }
     
     func revertColor() {
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = Shared.Instance.DARK_BLUE
     }
     
     func removeAllSubViews() {
@@ -33,12 +33,12 @@ class LineStatusViewController: UIViewController {
         table.reloadData()
         table.viewDidLoad()
         table.separatorStyle = .none
-        table.backgroundColor = .blue
+        table.backgroundColor = Shared.Instance.DARK_BLUE
     }
     
     func updateDataset(data:LineStatusViewModel) {
         Shared.Instance.updateUI {
-            self.view.backgroundColor = .white
+            self.view.backgroundColor = Shared.Instance.DARK_BLUE
             self.removeAllSubViews()
             self.createLineStatusTableView(data:data)
             

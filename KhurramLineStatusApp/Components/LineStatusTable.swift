@@ -45,14 +45,31 @@ class LineStatusTable : UITableView,UITableViewDelegate, UITableViewDataSource {
     }
     
     func addOverallStatusMessage(cell:UITableViewCell,message:String) {
-        cell.backgroundColor = .blue
+        cell.backgroundColor = Shared.Instance.DARK_BLUE
         cell.textLabel?.textColor = .white
-        addLineColor(cell: cell, color: .blue)
+        addLineColor(cell: cell, color: Shared.Instance.DARK_BLUE)
         cell.textLabel?.numberOfLines = 0
         cell.textLabel?.font =  UIFont(name: self.Johnston100Regular, size: 30)
         cell.textLabel?.text = message
     }
     
+    func addOverallGoodStatusMessage(cell:UITableViewCell,message:String) {
+        cell.backgroundColor = Shared.Instance.DARK_BLUE
+        cell.textLabel?.textColor = .white
+        addLineColor(cell: cell, color: Shared.Instance.DARK_BLUE)
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.text = message
+        cell.textLabel?.font =  UIFont(name: self.Johnston100Regular, size: 40)
+    }
+    
+    func addOverallGoodStatusServiceModesMessage(cell:UITableViewCell,message:String) {
+        cell.backgroundColor = Shared.Instance.DARK_BLUE
+        cell.textLabel?.textColor = .white
+        addLineColor(cell: cell, color: Shared.Instance.DARK_BLUE)
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.font =  UIFont(name: self.Johnston100Medium, size: 30)
+        cell.textLabel?.text = "\n\n\n\n\n\n\n \(message.replacingOccurrences(of: ",", with: "\n"))"
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -67,65 +84,31 @@ class LineStatusTable : UITableView,UITableViewDelegate, UITableViewDataSource {
         } else if item is OverallStatusCard {
              let overAllStatus = (item as! OverallStatusCard)
              addOverallStatusMessage(cell: cell, message: overAllStatus.message)
+        } else if item is OverallGoodStatusCard {
+            let overAllStatus = (item as! OverallGoodStatusCard)
+            addOverallGoodStatusMessage(cell: cell, message: overAllStatus.message)
+        } else if item is OverallGoodStatusServiceModesCard {
+            let entry = (item as! OverallGoodStatusServiceModesCard)
+            addOverallGoodStatusServiceModesMessage(cell: cell, message: entry.message)
         }
        
         return cell
     }
     
-    func cleanMessage(message:String) -> String {
-        return message.replacingOccurrences(of: "Underground Station", with: "")
-            .replacingOccurrences(of: "Rail Station", with: "")
-    }
-    
-    func getFriendlyMessages(message:String,cardParts:[CardPart]) -> [String] {
-        var messages = [String]()
-        for l in cardParts {
-            if l is ComplexCardPart {
-                let complexCardPart = l as! ComplexCardPart
-                messages.append(self.cleanMessage(message:"\(message) \n \(complexCardPart.from) .. \(complexCardPart.to)"))
-            }
-        }
-        return messages
-    }
-    
-    
-    
-    func flatMessages() ->[CardPartsMessages] {
-        let cards = self.viewModel.cardPacks.first?.cardGroups.first?.cards
-        
-        var result = [CardPartsMessages]()
-        for card in cards! {
-            if card is LineMessageCard {
-                let lineMessageCard = card as! LineMessageCard
-                let messages = self.getFriendlyMessages(
-                    message:lineMessageCard.message,
-                    cardParts: lineMessageCard.cardParts)
-                result.append(CardPartsMessages.init(messages:messages))
-            }
-        }
-        return result
-    }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
 
         let lastRowIndex = tableView.numberOfRows(inSection: 0)
         if indexPath.row == lastRowIndex - 1 {
-             var counters = Array.init(repeating: 0, count: indexPath.row + 1)
-            Shared.Instance.runCodeInIntervals(interval: 2,
-            code: {
-                Shared.Instance.updateUI {
-                    var messages = self.flatMessages()
-                    for index in 0..<tableView.visibleCells.count - 1 {
-                        tableView.visibleCells[index].detailTextLabel?.text = messages[index].messages[counters[index]]
-                         tableView.visibleCells[index].detailTextLabel?.numberOfLines = 0
-                    }
-                    
-                    for index in 0..<counters.count {
-                        counters[index] = (counters[index] + 1 >= messages[index].messages.count) ?
-                            0 : (counters[index] + 1)
-                    }
-                }
-            })
+            let messages = LineStatusTableHelpers.Instance.flatMessages(lineStatusViewModel: viewModel)
+            if messages.count > 0 {
+                LineStatusTableHelpers
+                    .Instance
+                    .updateStatus(
+                        totalRows: lastRowIndex + 1,
+                        tableView: tableView,
+                        messages:messages)
+            }
         }
     }
 }
@@ -134,4 +117,5 @@ class LineStatusTable : UITableView,UITableViewDelegate, UITableViewDataSource {
 //        var lbl = MarqueeLabel(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 150), duration: 100.0, andFadeLength: 5.0)
 //        lbl?.text = messages.joined()
 //        cell.addSubview(lbl!)
+
 

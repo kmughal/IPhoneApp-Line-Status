@@ -3,6 +3,7 @@ import RxSwift
 struct Shared {
     
     private static var instance:Shared = Shared()
+    let DARK_BLUE = UIColor(red:0.00, green:0.10, blue:0.66, alpha:1.0)
     
     static var Instance:Shared {
         get {
