@@ -11,19 +11,19 @@ class ApiService {
     }
     
     
-    func getLineStatus() -> Observable<[Line]> {
-        let result:Observable<[Line]> = getResponse(url:apiEndPointHelper.lineStatusEndPoint())
+    func getLineStatus() -> Observable<([Line],String)> {
+        let result:Observable<([Line],String)> = getResponse(url:apiEndPointHelper.lineStatusEndPoint())
         return result
     }
     
-    func getNetworkStatus() -> Observable<NetworkStatus> {
-        let result:Observable<NetworkStatus> = getResponse(url:apiEndPointHelper.networkStatusEndPoint())
+    func getNetworkStatus() -> Observable<(NetworkStatus,String)> {
+        let result:Observable<(NetworkStatus,String)> = getResponse(url:apiEndPointHelper.networkStatusEndPoint())
         return result
     }
     
-    private func getResponse<T:Codable>(url:String) -> Observable<T> {
+    private func getResponse<T:Codable>(url:String) -> Observable<(T,String)> {
         let client = JsonClient()
-        let result:Observable<T> = client.getResult(url)
+        let result:Observable<(T,String)> = client.getResult(url)
         return result
     }
 }

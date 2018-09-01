@@ -4,30 +4,30 @@ import RxSwift
 
 class JsonClient {
     
-    func getResult<T:Codable>(_ url:String) -> Observable<T> {
+    func getResult<T:Codable>(_ url:String) -> Observable<(T,String)> {
         
         return Observable.create {
             observer in
             let dataStream = self.getDataStream(url:url).subscribe(onNext: { result in
                 let rEntity:T
+                print("url:\(url)")
                 rEntity = self.tryParse(data:result)!
-                observer.onNext(rEntity)
+                let result:(T,String) = (rEntity,String.init(data: result, encoding: .utf8)!)
+                observer.onNext(result)
             })
             return Disposables.create { dataStream.dispose() }
         }
     }
     
-    private func tryParse<T:Codable>(data:Data) ->  T?  {
+    private func tryParse<T:Codable>(data:Data) ->  (T?)  {
         let decoder = JSONDecoder()
         var result:T
         do {
-//            let jsonString = try JSONSerialization.jsonObject(with:
-//                data, options: [])
-            
-             result = try decoder.decode(T.self, from: data)
+            result = try decoder.decode(T.self, from: data)
             return result
+
         } catch {
-            print("error \(error)")
+            print("error \(error), descrption:\(error.localizedDescription)")
         }
         return nil
     }
@@ -39,7 +39,6 @@ class JsonClient {
             let task = URLSession.shared.dataTask(with: url!) {
                 data,response,error in
                 if let dataResponse = data {
-                  
                     observer.onNext(dataResponse)
                 } else {
                     observer.onError(RxCocoaURLError.unknown)
@@ -49,5 +48,4 @@ class JsonClient {
             return Disposables.create { task.cancel() }
         }
     }
-    
 }

@@ -17,12 +17,18 @@ class ApiLineStatusViewModelBuilder {
         
         return Observable
             .zip(fetchLineStatus,
-                 fetchNetworkStatus) { (lines, networkStatus) throws -> ApiLineStatusViewModel in
+                 fetchNetworkStatus) { (lineStatusResponse, networkStatusResponse) throws -> ApiLineStatusViewModel in
+                    
+                    let (lines,linesRawJson) = lineStatusResponse
+                    let (networkStatus,_) = networkStatusResponse
+                    
                     return ApiLineStatusViewModel(
                         lines: lines,
                         networkStatus: networkStatus,
                         hasDisruptions: ApiLineStatusViewModel.hasDelays(ls: lines),
-                        hasGoodService: ApiLineStatusViewModel.hasAtleastOneGoodService(ls: lines))
+                        hasGoodService: ApiLineStatusViewModel.hasAtleastOneGoodService(ls: lines),
+                        rawJsonResponseForLineStatus : linesRawJson
+                    )
             }
     }
 }

@@ -4,8 +4,7 @@ class LineStatusViewModel {
     
     var style: String
     var cardPacks : [CardPack]
-    
-    static var LastResponse = ""
+    var rawJson : String = ""
     
     init(style:String,cardPacks : [CardPack]) {
         self.style = style
@@ -14,5 +13,9 @@ class LineStatusViewModel {
     
     func addCardPack(cardPack:CardPack) {
         self.cardPacks.append(cardPack)
+    }
+    
+    static func isJsonDifferent(oldJson:String,newJson:String) -> Bool {
+        return oldJson != newJson
     }
 }

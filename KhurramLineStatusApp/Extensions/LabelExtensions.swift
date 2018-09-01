@@ -28,5 +28,19 @@ extension UILabel {
         self.font = UIFontMetrics.default.scaledFont(for: customFont)
         self.adjustsFontForContentSizeCategory = true
     }
+    
+    func startAnimation(duration:TimeInterval) {
+        let slideInFromLeftTransition = CATransition()
+        slideInFromLeftTransition.type = kCATransitionPush
+        slideInFromLeftTransition.subtype = kCATransitionFromBottom
+        slideInFromLeftTransition.duration = duration
+        slideInFromLeftTransition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        slideInFromLeftTransition.fillMode = kCAFillModeRemoved
+        self.layer.add(slideInFromLeftTransition, forKey: "slideInFromLeftTransition")
+    }
 }
+
+
+
+
 

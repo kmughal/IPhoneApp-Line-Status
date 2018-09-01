@@ -57,9 +57,10 @@ class LineStatusTableHelpers {
                         for index in 0..<tableView.visibleCells.count - 1 {
                             tableView.visibleCells[index].detailTextLabel?.text = messages[index].messages[counters[index]]
                             tableView.visibleCells[index].detailTextLabel?.numberOfLines = 0
+                            tableView.visibleCells[index].detailTextLabel?.startAnimation(duration: 0.5)
                         }
                     
-                        for index in 0..<counters.count {
+                        for index in 0..<counters.count - 1 {
                             counters[index] = (counters[index] + 1 >= messages[index].messages.count) ?
                                 0 : (counters[index] + 1)
                         }

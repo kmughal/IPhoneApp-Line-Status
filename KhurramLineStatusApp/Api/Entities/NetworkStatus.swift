@@ -1,10 +1,15 @@
 import Foundation
 
 
-class NetworkStatus : Codable {
+class NetworkStatus : Codable,ApiResponse {
     var status: String
     var message: String
     var statusLevel: Int
+    var RawJson : String? = ""
+    
+    func setRawJson(rawJson: String) {
+        self.RawJson = rawJson
+    }
     
     init(status:String,message:String,statusLevel:Int) {
         self.status = status

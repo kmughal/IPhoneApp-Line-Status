@@ -36,19 +36,23 @@ class LineStatusViewController: UIViewController {
         table.backgroundColor = Shared.Instance.DARK_BLUE
     }
     
-    func updateDataset(data:LineStatusViewModel) {
+    func updateDataset(_ data:LineStatusViewModel) {
         Shared.Instance.updateUI {
             self.view.backgroundColor = Shared.Instance.DARK_BLUE
             self.removeAllSubViews()
             self.createLineStatusTableView(data:data)
-            
         }
     }
     
     func getLineStatus() {
          let builder = LineStatusBuilder()
         builder.build().subscribe(onNext: { data in
-           self.updateDataset(data: data)
+            let updateRequired = LineStatusViewModel.isJsonDifferent(oldJson: data.rawJson, newJson: self.table.viewModel.rawJson)
+            
+            if (updateRequired) {
+                 self.updateDataset(data)
+            }
+            
         }, onError: nil, onCompleted: nil, onDisposed: nil)
     }
     

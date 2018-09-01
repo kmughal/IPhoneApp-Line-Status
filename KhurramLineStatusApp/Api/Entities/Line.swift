@@ -1,5 +1,19 @@
 import Foundation
 
+protocol ApiResponse {
+    func setRawJson(rawJson:String) -> Void
+}
+
+class Lines {
+    var lines:[Line]
+    var rawString: String
+    
+    init(lines:[Line],rawString:String) {
+        self.lines = lines
+        self.rawString = rawString
+    }
+}
+
 class Line : Codable {
     var id:String
     var modeName:String

@@ -6,6 +6,7 @@ class LineStatusBuilder {
     
     private var apiViewModel:ApiLineStatusViewModel
     private let apiViewModelBuilder = ApiLineStatusViewModelBuilder()
+    private static var previousLineStatusResponse = ApiLineStatusViewModel.CreateEmpty()
     
     init() {
         self.apiViewModel = ApiLineStatusViewModel.CreateEmpty()
@@ -27,6 +28,8 @@ class LineStatusBuilder {
                         var vm = LineStatusViewModel(style: "", cardPacks: [CardPack]())
                         vm = DisruptionsBuilder().build(vm: vm, apiVm: result)
                         vm = GoodServicesBuilder().build(vm: vm, apiVm: result)
+                        vm.rawJson = result.rawJsonResponseForLineStatus
+                        LineStatusBuilder.previousLineStatusResponse = result
                         observer.onNext(vm)
                     } else {
                         
