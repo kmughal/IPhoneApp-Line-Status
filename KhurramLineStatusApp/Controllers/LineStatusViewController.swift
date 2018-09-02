@@ -24,7 +24,7 @@ class LineStatusViewController: UIViewController {
     func createLineStatusTableView(data:LineStatusViewModel) {
          self.table = LineStatusTable(frame: CGRect(
             x: 0,
-            y: 50,
+            y: 10,
             width: self.view.bounds.width,
             height: self.view.bounds.height))
         
@@ -70,7 +70,7 @@ class LineStatusViewController: UIViewController {
         self.view.layoutIfNeeded()
         self.table.frame = CGRect(
             x: 0,
-            y: 50,
+            y: 10,
             width: size.width,
             height: size.height)
     }

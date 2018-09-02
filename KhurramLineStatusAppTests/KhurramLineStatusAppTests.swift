@@ -1,11 +1,3 @@
-//
-//  KhurramLineStatusAppTests.swift
-//  KhurramLineStatusAppTests
-//
-//  Created by macpro on 18/08/2018.
-//  Copyright © 2018 macpro. All rights reserved.
-//
-
 import XCTest
 @testable import KhurramLineStatusApp
 
@@ -22,8 +14,10 @@ class KhurramLineStatusAppTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
+//         This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        XCTAssertEqual(3, 13)
     }
     
     func testPerformanceExample() {
