@@ -4,19 +4,21 @@ import RxSwift
 
 class LineStatusBuilder {
     
-    private var apiViewModel:ApiLineStatusViewModel
-    private let apiViewModelBuilder = ApiLineStatusViewModelBuilder()
+    private let apiViewModel:ApiLineStatusViewModel
+    private let apiViewModelBuilder:ApiLineStatusViewModelBuilder
     private static var previousLineStatusResponse = ApiLineStatusViewModel.CreateEmpty()
+    private let disruptionBiulder : DisruptionsBuilder
+    private let goodServiceBiulder : GoodServicesBuilder
     
-    init() {
+    init(
+        apiViewModelBuilder:ApiLineStatusViewModelBuilder,
+        goodServiceBiulder : GoodServicesBuilder,
+        disruptionBiulder : DisruptionsBuilder
+        ) {
         self.apiViewModel = ApiLineStatusViewModel.CreateEmpty()
-    }
-    
-    func initApiViewModel() -> Void {
-        self.apiViewModelBuilder.build()
-            .subscribe(onNext: { r in
-                self.apiViewModel = r
-            }, onError: nil, onCompleted: nil, onDisposed: nil)
+        self.apiViewModelBuilder = apiViewModelBuilder
+        self.disruptionBiulder = disruptionBiulder
+        self.goodServiceBiulder = goodServiceBiulder
     }
     
     func build() -> Observable<LineStatusViewModel> {
@@ -26,8 +28,8 @@ class LineStatusBuilder {
                 .subscribe({ r in
                     if let result = r.element {
                         var vm = LineStatusViewModel(style: "", cardPacks: [CardPack]())
-                        vm = DisruptionsBuilder().build(vm: vm, apiVm: result)
-                        vm = GoodServicesBuilder().build(vm: vm, apiVm: result)
+                        vm = self.disruptionBiulder.build(vm: vm, apiVm: result)
+                        vm = self.goodServiceBiulder.build(vm: vm, apiVm: result)
                         vm.rawJson = result.rawJsonResponseForLineStatus
                         LineStatusBuilder.previousLineStatusResponse = result
                         observer.onNext(vm)

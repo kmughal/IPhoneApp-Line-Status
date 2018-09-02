@@ -1,12 +1,12 @@
 import Foundation
 
-class DisruptionsBuilder {
+class DisruptionsBuilder  : DisruptionsConstructor {
     
-    func getDisruptedLines(apiVm:ApiLineStatusViewModel) -> [Line] {
-        return ApiLineStatusViewModel.getDisruptedLinesOnly(ls: apiVm.lines)
-    }
-    
-    func build(vm:LineStatusViewModel,apiVm: ApiLineStatusViewModel) -> LineStatusViewModel {
+    func build(
+        vm:LineStatusViewModel,
+        apiVm: ApiLineStatusViewModel
+        ) -> LineStatusViewModel {
+        
         if apiVm.hasDisruptions {
             
             let disruptedLines = getDisruptedLines(apiVm: apiVm)
@@ -30,7 +30,11 @@ class DisruptionsBuilder {
         return vm
     }
     
-    func createCardParts(line:Line) -> [CardPart] {
+    private func getDisruptedLines(apiVm:ApiLineStatusViewModel) -> [Line] {
+        return ApiLineStatusViewModel.getDisruptedLinesOnly(ls: apiVm.lines)
+    }
+    
+    private func createCardParts(line:Line) -> [CardPart] {
         var result = [CardPart]()
         let lineStatuses = line.lineStatuses
         if lineStatuses.count > 0 {
@@ -55,12 +59,15 @@ class DisruptionsBuilder {
             }
         }
         
-        for item in result {
-            if item is ComplexCardPart {
-                let e = (item as! ComplexCardPart)
+        
+        let displayCard = { (r:CardPart) in
+            if r is ComplexCardPart {
+                let e = (r as! ComplexCardPart)
                 print("\(e.from) - \(e.to)")
             }
         }
+        
+        result.forEach({displayCard($0)})
         return result
     }
 }

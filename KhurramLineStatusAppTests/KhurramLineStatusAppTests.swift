@@ -17,7 +17,7 @@ class KhurramLineStatusAppTests: XCTestCase {
 //         This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        XCTAssertEqual(3, 13)
+        XCTAssertEqual(3, 3)
     }
     
     func testPerformanceExample() {

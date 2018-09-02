@@ -1,9 +1,14 @@
-//import UIKit
 import RxSwift
 import RxCocoa
 
 class LineStatusViewController: UIViewController {
+    
     private var table:LineStatusTable = LineStatusTable(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+    public var lineStatusBuilder:LineStatusBuilder? = nil
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +50,8 @@ class LineStatusViewController: UIViewController {
     }
     
     func getLineStatus() {
-         let builder = LineStatusBuilder()
-        builder.build().subscribe(onNext: { data in
+        
+        lineStatusBuilder?.build().subscribe(onNext: { data in
             let updateRequired = LineStatusViewModel.isJsonDifferent(oldJson: data.rawJson, newJson: self.table.viewModel.rawJson)
             
             if (updateRequired) {

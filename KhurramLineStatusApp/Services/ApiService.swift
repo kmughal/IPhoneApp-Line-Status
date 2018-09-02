@@ -5,11 +5,12 @@ import RxSwift
 class ApiService {
     
     private let apiEndPointHelper:ApiEndPoints
+    private let client:Requestable
     
-    init() {
-        self.apiEndPointHelper = ApiEndPoints()
+    init(apiEndPointHelper:ApiEndPoints,client:Requestable) {
+        self.apiEndPointHelper = apiEndPointHelper
+        self.client = client
     }
-    
     
     func getLineStatus() -> Observable<([Line],String)> {
         let result:Observable<([Line],String)> = getResponse(url:apiEndPointHelper.lineStatusEndPoint())
@@ -22,7 +23,6 @@ class ApiService {
     }
     
     private func getResponse<T:Codable>(url:String) -> Observable<(T,String)> {
-        let client = JsonClient()
         let result:Observable<(T,String)> = client.getResult(url)
         return result
     }

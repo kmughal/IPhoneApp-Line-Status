@@ -1,6 +1,19 @@
 import Foundation
 
-class GoodServicesBuilder {
+class GoodServicesBuilder : GoodServicesConstructor {
+    
+    func build(
+        vm:LineStatusViewModel,
+        apiVm:ApiLineStatusViewModel
+        ) -> LineStatusViewModel {
+        
+        if apiVm.hasDisruptions {
+            return addOverallStatus(vm: vm, cards: getOverallStatusCards())
+        } else if apiVm.hasGoodService {
+            return addOverallStatus(vm: vm, cards: getGoodServiceStatusCards())
+        }
+        return vm
+    }
     
     private func addOverallStatus(vm:LineStatusViewModel,cards: [Card]) -> LineStatusViewModel {
         vm.addCardPack(
@@ -21,15 +34,6 @@ class GoodServicesBuilder {
     }
     
     private func getGoodServiceStatusCards() -> [Card] {
-      return [OverallGoodStatusCard(),OverallGoodStatusServiceModesCard()]
-    }
-    
-    func build(vm:LineStatusViewModel,apiVm:ApiLineStatusViewModel) -> LineStatusViewModel {
-        if apiVm.hasDisruptions {
-            return addOverallStatus(vm: vm, cards: getOverallStatusCards())
-        } else if apiVm.hasGoodService {
-            return addOverallStatus(vm: vm, cards: getGoodServiceStatusCards())
-        }
-        return vm
+        return [OverallGoodStatusCard(),OverallGoodStatusServiceModesCard()]
     }
 }

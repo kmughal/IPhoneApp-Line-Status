@@ -1,6 +1,6 @@
 import Foundation
 
-class ApiEndPoints {
+class ApiEndPoints : ApiEndPointUrls {
     
     private let lineStatus = "LineStatus"
     private let networkStatus = "NetworkStatus"
@@ -27,7 +27,7 @@ class ApiEndPoints {
         return getUrl(propertyName: networkStatus)
     }
     
-    func getUrl(propertyName:String) -> String {
+    private func getUrl(propertyName:String) -> String {
         return "\(self.baseUrl)\(self.getStringValue(propertyName: propertyName))"
     }
     

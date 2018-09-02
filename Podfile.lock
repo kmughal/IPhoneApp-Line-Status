@@ -5,23 +5,32 @@ PODS:
   - RxCocoa (4.2.0):
     - RxSwift (~> 4.0)
   - RxSwift (4.2.0)
+  - Swinject (2.4.1)
+  - SwinjectStoryboard (2.0.2):
+    - Swinject (~> 2.4)
 
 DEPENDENCIES:
   - MarqueeLabel
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
+  - Swinject
+  - SwinjectStoryboard
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - MarqueeLabel
     - RxCocoa
     - RxSwift
+    - Swinject
+    - SwinjectStoryboard
 
 SPEC CHECKSUMS:
   MarqueeLabel: 0c41f08ef5773e29c0f71064a8fa788a2fd8b365
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  Swinject: f7f15a9672e99328c1f07f277091087917215700
+  SwinjectStoryboard: 365698aec11b57c6b14a3c1f52d0308759d377bf
 
-PODFILE CHECKSUM: aaeb120038599d51930d2aa6b1f174d8c75e63cc
+PODFILE CHECKSUM: 80c2d047b243b294aabef8bf2ddd4f844a03ce17
 
 COCOAPODS: 1.5.3

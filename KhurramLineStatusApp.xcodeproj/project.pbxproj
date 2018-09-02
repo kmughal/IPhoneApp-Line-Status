@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CCBF0BEDCC7F492C11D9839 /* Pods_KhurramLineStatusAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75444F140E508DCF664799BB /* Pods_KhurramLineStatusAppTests.framework */; };
-		1D0EDE69C54F365A0B9EF000 /* Pods_KhurramLineStatusAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D6B3F7275A660019E73BE2 /* Pods_KhurramLineStatusAppUITests.framework */; };
-		57096D8CFD82A56341F0AC57 /* Pods_KhurramLineStatusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC4BDCB6ACA5F83B24CFB9B /* Pods_KhurramLineStatusApp.framework */; };
+		04847315F68B9F04CD7C5F67 /* libPods-KhurramLineStatusAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FDA74E4B7CBA7997526AAF /* libPods-KhurramLineStatusAppTests.a */; };
+		2E608C828AFB92D3F45CDBA6 /* libPods-KhurramLineStatusAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C7B8D34E520EE7A8C0C20B /* libPods-KhurramLineStatusAppUITests.a */; };
+		496F4829543455F3362E6D8D /* libPods-KhurramLineStatusApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E16602E3A9E89669A60AB4C1 /* libPods-KhurramLineStatusApp.a */; };
 		8E16BA6921340C5E002BF443 /* Johnston100-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E16BA6421340C5E002BF443 /* Johnston100-Thin.otf */; };
 		8E16BA6A21340C5E002BF443 /* Johnston100-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E16BA6521340C5E002BF443 /* Johnston100-Regular.otf */; };
 		8E16BA6B21340C5E002BF443 /* Johnston100-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E16BA6621340C5E002BF443 /* Johnston100-Hairline.otf */; };
@@ -48,6 +48,11 @@
 		8EA9BDE821372E230060E8AD /* OverallGoodStatusServiceModesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9BDE721372E230060E8AD /* OverallGoodStatusServiceModesCard.swift */; };
 		8EA9BDEA21373A8B0060E8AD /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9BDE921373A8B0060E8AD /* FontExtensions.swift */; };
 		8EABE0C5213AF834003DF0F7 /* CardPartsMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EABE0C4213AF834003DF0F7 /* CardPartsMessages.swift */; };
+		8EAD0876213BECAF0080AC75 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD0875213BECAF0080AC75 /* Injector.swift */; };
+		8EAD0878213BFF650080AC75 /* Requesable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD0877213BFF650080AC75 /* Requesable.swift */; };
+		8EAD087A213C010F0080AC75 /* ApiEndPointUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD0879213C010F0080AC75 /* ApiEndPointUrls.swift */; };
+		8EAD087C213C04340080AC75 /* DisruptionsConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD087B213C04340080AC75 /* DisruptionsConstructor.swift */; };
+		8EAD087E213C048D0080AC75 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD087D213C048D0080AC75 /* File.swift */; };
 		8EC01D172132BC280060E8FE /* DistruptionsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC01D162132BC280060E8FE /* DistruptionsBuilder.swift */; };
 		8EC01D192132BDD40060E8FE /* GoodServicesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC01D182132BDD40060E8FE /* GoodServicesBuilder.swift */; };
 		8EC01D242132FAAF0060E8FE /* LineStatusTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC01D232132FAAF0060E8FE /* LineStatusTable.swift */; };
@@ -85,9 +90,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2BC4BDCB6ACA5F83B24CFB9B /* Pods_KhurramLineStatusApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KhurramLineStatusApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5569BB3AD8C1BEAFF87224B7 /* Pods-KhurramLineStatusAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhurramLineStatusAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KhurramLineStatusAppUITests/Pods-KhurramLineStatusAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		75444F140E508DCF664799BB /* Pods_KhurramLineStatusAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KhurramLineStatusAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C7B8D34E520EE7A8C0C20B /* libPods-KhurramLineStatusAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KhurramLineStatusAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		771AB1C99E6558FA0D554BDF /* Pods-KhurramLineStatusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhurramLineStatusApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-KhurramLineStatusApp/Pods-KhurramLineStatusApp.release.xcconfig"; sourceTree = "<group>"; };
 		8E16BA6421340C5E002BF443 /* Johnston100-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100-Thin.otf"; path = "../../../../../workplace/line-status-tfl-gov-uk/Source/tfl.linestatus.component/wwwroot/fonts/OTF/Johnston100-Thin.otf"; sourceTree = "<group>"; };
 		8E16BA6521340C5E002BF443 /* Johnston100-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100-Regular.otf"; path = "../../../../../workplace/line-status-tfl-gov-uk/Source/tfl.linestatus.component/wwwroot/fonts/OTF/Johnston100-Regular.otf"; sourceTree = "<group>"; };
@@ -134,6 +138,11 @@
 		8EA9BDE721372E230060E8AD /* OverallGoodStatusServiceModesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OverallGoodStatusServiceModesCard.swift; path = Entities/OverallGoodStatusServiceModesCard.swift; sourceTree = "<group>"; };
 		8EA9BDE921373A8B0060E8AD /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FontExtensions.swift; path = Extensions/FontExtensions.swift; sourceTree = "<group>"; };
 		8EABE0C4213AF834003DF0F7 /* CardPartsMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardPartsMessages.swift; path = Entities/CardPartsMessages.swift; sourceTree = "<group>"; };
+		8EAD0875213BECAF0080AC75 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		8EAD0877213BFF650080AC75 /* Requesable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requesable.swift; sourceTree = "<group>"; };
+		8EAD0879213C010F0080AC75 /* ApiEndPointUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPointUrls.swift; sourceTree = "<group>"; };
+		8EAD087B213C04340080AC75 /* DisruptionsConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisruptionsConstructor.swift; sourceTree = "<group>"; };
+		8EAD087D213C048D0080AC75 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		8EC01D162132BC280060E8FE /* DistruptionsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistruptionsBuilder.swift; sourceTree = "<group>"; };
 		8EC01D182132BDD40060E8FE /* GoodServicesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServicesBuilder.swift; sourceTree = "<group>"; };
 		8EC01D232132FAAF0060E8FE /* LineStatusTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineStatusTable.swift; sourceTree = "<group>"; };
@@ -153,10 +162,11 @@
 		8EE42DFB2131C3B300631B36 /* LineStatusBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineStatusBuilder.swift; sourceTree = "<group>"; };
 		8EE91816213433B00090C280 /* JsonClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonClient.swift; path = Api/Commons/JsonClient.swift; sourceTree = "<group>"; };
 		8EE91817213433B10090C280 /* ApiEndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiEndPoints.swift; path = Api/Commons/ApiEndPoints.swift; sourceTree = "<group>"; };
+		95FDA74E4B7CBA7997526AAF /* libPods-KhurramLineStatusAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KhurramLineStatusAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55F36E6D6BEFF212B09938D /* Pods-KhurramLineStatusAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhurramLineStatusAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KhurramLineStatusAppUITests/Pods-KhurramLineStatusAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C496C09C59F3BB0AD394B452 /* Pods-KhurramLineStatusAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhurramLineStatusAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KhurramLineStatusAppTests/Pods-KhurramLineStatusAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CEB1DEC95B526E9E9A989948 /* Pods-KhurramLineStatusAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhurramLineStatusAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KhurramLineStatusAppTests/Pods-KhurramLineStatusAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		E5D6B3F7275A660019E73BE2 /* Pods_KhurramLineStatusAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KhurramLineStatusAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E16602E3A9E89669A60AB4C1 /* libPods-KhurramLineStatusApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KhurramLineStatusApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4E20D39F2ED18CC7362026 /* Pods-KhurramLineStatusApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhurramLineStatusApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KhurramLineStatusApp/Pods-KhurramLineStatusApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,7 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57096D8CFD82A56341F0AC57 /* Pods_KhurramLineStatusApp.framework in Frameworks */,
+				496F4829543455F3362E6D8D /* libPods-KhurramLineStatusApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CCBF0BEDCC7F492C11D9839 /* Pods_KhurramLineStatusAppTests.framework in Frameworks */,
+				04847315F68B9F04CD7C5F67 /* libPods-KhurramLineStatusAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D0EDE69C54F365A0B9EF000 /* Pods_KhurramLineStatusAppUITests.framework in Frameworks */,
+				2E608C828AFB92D3F45CDBA6 /* libPods-KhurramLineStatusAppUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,9 +201,9 @@
 		4163D99A0F21DC35F417FEBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2BC4BDCB6ACA5F83B24CFB9B /* Pods_KhurramLineStatusApp.framework */,
-				75444F140E508DCF664799BB /* Pods_KhurramLineStatusAppTests.framework */,
-				E5D6B3F7275A660019E73BE2 /* Pods_KhurramLineStatusAppUITests.framework */,
+				E16602E3A9E89669A60AB4C1 /* libPods-KhurramLineStatusApp.a */,
+				95FDA74E4B7CBA7997526AAF /* libPods-KhurramLineStatusAppTests.a */,
+				75C7B8D34E520EE7A8C0C20B /* libPods-KhurramLineStatusAppUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -212,6 +222,10 @@
 			children = (
 				8E4E082F213437C900C702EA /* Card.swift */,
 				8E4E083421343DB000C702EA /* CardPart.swift */,
+				8EAD0877213BFF650080AC75 /* Requesable.swift */,
+				8EAD0879213C010F0080AC75 /* ApiEndPointUrls.swift */,
+				8EAD087B213C04340080AC75 /* DisruptionsConstructor.swift */,
+				8EAD087D213C048D0080AC75 /* File.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -249,6 +263,7 @@
 		8E7A139021283C840097D9B6 /* KhurramLineStatusApp */ = {
 			isa = PBXGroup;
 			children = (
+				8EAD0874213BEC8E0080AC75 /* DI */,
 				8E3DA28E213464C0007EC446 /* Helpers */,
 				8E4E083A2134435900C702EA /* StoryBoard */,
 				8E4E082E213437B800C702EA /* Protocols */,
@@ -300,6 +315,14 @@
 				8E16BA6421340C5E002BF443 /* Johnston100-Thin.otf */,
 			);
 			name = CustomFonts;
+			sourceTree = "<group>";
+		};
+		8EAD0874213BEC8E0080AC75 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				8EAD0875213BECAF0080AC75 /* Injector.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 		8EC01D1D2132F9CF0060E8FE /* Extensions */ = {
@@ -462,7 +485,6 @@
 				8E7A138A21283C840097D9B6 /* Sources */,
 				8E7A138B21283C840097D9B6 /* Frameworks */,
 				8E7A138C21283C840097D9B6 /* Resources */,
-				2B1F8212271355C89E21F8B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -587,28 +609,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2B1F8212271355C89E21F8B8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KhurramLineStatusApp/Pods-KhurramLineStatusApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KhurramLineStatusApp/Pods-KhurramLineStatusApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		549B546E78FEED9959E7FFE5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -678,6 +678,7 @@
 				8EC01D172132BC280060E8FE /* DistruptionsBuilder.swift in Sources */,
 				8E9464D52134352A0015022B /* CardPack.swift in Sources */,
 				8E4E0830213437C900C702EA /* Card.swift in Sources */,
+				8EAD0878213BFF650080AC75 /* Requesable.swift in Sources */,
 				8E9464C9213434BA0015022B /* ServiceType.swift in Sources */,
 				8EE42DED2131BF3C00631B36 /* ApiLineStatusViewModel.swift in Sources */,
 				8EA9BDE821372E230060E8AD /* OverallGoodStatusServiceModesCard.swift in Sources */,
@@ -689,10 +690,12 @@
 				8E7A139421283C840097D9B6 /* InitController.swift in Sources */,
 				8E9464CA213434BA0015022B /* Line.swift in Sources */,
 				8EE42DD72131B91100631B36 /* LineStatusViewModel.swift in Sources */,
+				8EAD0876213BECAF0080AC75 /* Injector.swift in Sources */,
 				8E3DA29221346569007EC446 /* ComplexCardPart.swift in Sources */,
 				8E9464D82134352A0015022B /* LineMessageCard.swift in Sources */,
 				8E9464DE213435560015022B /* LayerExtensions.swift in Sources */,
 				8EC226072131821C00C1B37B /* ApiLineStatusViewModelBuilder.swift in Sources */,
+				8EAD087E213C048D0080AC75 /* File.swift in Sources */,
 				8EC01D28213309720060E8FE /* LineStatusTabelCell.swift in Sources */,
 				8E7A139221283C840097D9B6 /* AppDelegate.swift in Sources */,
 				8EABE0C5213AF834003DF0F7 /* CardPartsMessages.swift in Sources */,
@@ -705,6 +708,8 @@
 				8EC01D192132BDD40060E8FE /* GoodServicesBuilder.swift in Sources */,
 				8E9464DD213435550015022B /* LabelExtensions.swift in Sources */,
 				8EE42DFC2131C3B300631B36 /* LineStatusBuilder.swift in Sources */,
+				8EAD087C213C04340080AC75 /* DisruptionsConstructor.swift in Sources */,
+				8EAD087A213C010F0080AC75 /* ApiEndPointUrls.swift in Sources */,
 				8EC01D2B2133098E0060E8FE /* LineStatusCellField.swift in Sources */,
 				8EE42DF72131C2C700631B36 /* ServiceTypes.swift in Sources */,
 				8E9464CB213434BA0015022B /* AffectedRoute.swift in Sources */,

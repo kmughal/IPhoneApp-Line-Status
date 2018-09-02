@@ -6,8 +6,8 @@ class ApiLineStatusViewModelBuilder {
     
     private let lineStatusService:ApiService
     
-    init() {
-        self.lineStatusService = ApiService()
+    init(lineStatusService:ApiService) {
+        self.lineStatusService = lineStatusService
     }
     
     func build() -> Observable<ApiLineStatusViewModel> {

@@ -2,7 +2,7 @@ import Foundation
 import RxCocoa
 import RxSwift
 
-class JsonClient {
+class JsonClient : Requestable {
     
     func getResult<T:Codable>(_ url:String) -> Observable<(T,String)> {
         
