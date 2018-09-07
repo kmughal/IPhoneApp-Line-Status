@@ -12,6 +12,8 @@ class LineStatusViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("path")
+        print(Bundle.main.path(forResource: "disruptions", ofType: "json",inDirectory:"Mocks"))
     }
 
     override func didReceiveMemoryWarning() {

@@ -14,6 +14,9 @@ class InitController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        if let filepath = Bundle.main.path(forResource: "test", ofType: "json") {
+            print("f:\(filepath)")
+        }
         self.showLineStatus()
     }
     

@@ -1,11 +1,3 @@
-//
-//  KhurramLineStatusAppUITests.swift
-//  KhurramLineStatusAppUITests
-//
-//  Created by macpro on 18/08/2018.
-//  Copyright © 2018 macpro. All rights reserved.
-//
-
 import XCTest
 
 class KhurramLineStatusAppUITests: XCTestCase {

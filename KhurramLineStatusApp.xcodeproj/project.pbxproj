@@ -27,7 +27,6 @@
 		8E7A139A21283C840097D9B6 /* KhurramLineStatusApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A139821283C840097D9B6 /* KhurramLineStatusApp.xcdatamodeld */; };
 		8E7A139C21283C860097D9B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A139B21283C860097D9B6 /* Assets.xcassets */; };
 		8E7A139F21283C860097D9B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A139D21283C860097D9B6 /* LaunchScreen.storyboard */; };
-		8E7A13AA21283C860097D9B6 /* KhurramLineStatusAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A13A921283C860097D9B6 /* KhurramLineStatusAppTests.swift */; };
 		8E7A13B521283C860097D9B6 /* KhurramLineStatusAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A13B421283C860097D9B6 /* KhurramLineStatusAppUITests.swift */; };
 		8E7A13DB21283FDA0097D9B6 /* LineStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A13DA21283FDA0097D9B6 /* LineStatusViewController.swift */; };
 		8E9464C9213434BA0015022B /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464C3213434B90015022B /* ServiceType.swift */; };
@@ -53,6 +52,46 @@
 		8EAD087A213C010F0080AC75 /* ApiEndPointUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD0879213C010F0080AC75 /* ApiEndPointUrls.swift */; };
 		8EAD087C213C04340080AC75 /* DisruptionsConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD087B213C04340080AC75 /* DisruptionsConstructor.swift */; };
 		8EAD087E213C048D0080AC75 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD087D213C048D0080AC75 /* File.swift */; };
+		8EB0D6CC21432571005AA004 /* LocalJsonFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB0D6CB21432571005AA004 /* LocalJsonFileReader.swift */; };
+		8EB0D6CD21432958005AA004 /* ApiLineStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE42DEC2131BF3C00631B36 /* ApiLineStatusViewModel.swift */; };
+		8EB0D6CE2143296C005AA004 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464C4213434B90015022B /* Line.swift */; };
+		8EB0D6CF2143296F005AA004 /* LineStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464C8213434BA0015022B /* LineStatus.swift */; };
+		8EB0D6D021432973005AA004 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464C7213434BA0015022B /* NetworkStatus.swift */; };
+		8EB0D6D121432977005AA004 /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464C3213434B90015022B /* ServiceType.swift */; };
+		8EB0D6D22143297A005AA004 /* AffectedRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464C5213434B90015022B /* AffectedRoute.swift */; };
+		8EB0D6D3214329F2005AA004 /* DistruptionsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC01D162132BC280060E8FE /* DistruptionsBuilder.swift */; };
+		8EB0D6D4214329F5005AA004 /* LineStatusBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE42DFB2131C3B300631B36 /* LineStatusBuilder.swift */; };
+		8EB0D6D5214329FB005AA004 /* GoodServicesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC01D182132BDD40060E8FE /* GoodServicesBuilder.swift */; };
+		8EB0D6D621432A8B005AA004 /* LineStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE42DD62131B91100631B36 /* LineStatusViewModel.swift */; };
+		8EB0D6D721432BA2005AA004 /* CardPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464D12134352A0015022B /* CardPack.swift */; };
+		8EB0D6D821432BA5005AA004 /* ComplexCardPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3DA29121346569007EC446 /* ComplexCardPart.swift */; };
+		8EB0D6D921432BA8005AA004 /* OverallStatusCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E083B2134638F00C702EA /* OverallStatusCard.swift */; };
+		8EB0D6DA21432BAB005AA004 /* SimpleTextCardPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E083C2134638F00C702EA /* SimpleTextCardPart.swift */; };
+		8EB0D6DB21432BAE005AA004 /* LineMessageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464D42134352A0015022B /* LineMessageCard.swift */; };
+		8EB0D6DC21432BB1005AA004 /* CardGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464D32134352A0015022B /* CardGroup.swift */; };
+		8EB0D6DD21432BB5005AA004 /* OverallGoodStatusCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9BDE521372D6B0060E8AD /* OverallGoodStatusCard.swift */; };
+		8EB0D6DE21432BB8005AA004 /* OverallGoodStatusServiceModesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9BDE721372E230060E8AD /* OverallGoodStatusServiceModesCard.swift */; };
+		8EB0D6DF21432BBC005AA004 /* CardPartsMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EABE0C4213AF834003DF0F7 /* CardPartsMessages.swift */; };
+		8EB0D6E021432C54005AA004 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E082F213437C900C702EA /* Card.swift */; };
+		8EB0D6E121432C58005AA004 /* CardPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E083421343DB000C702EA /* CardPart.swift */; };
+		8EB0D6E221432C5B005AA004 /* Requesable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD0877213BFF650080AC75 /* Requesable.swift */; };
+		8EB0D6E321432C5F005AA004 /* ApiEndPointUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD0879213C010F0080AC75 /* ApiEndPointUrls.swift */; };
+		8EB0D6E421432C63005AA004 /* DisruptionsConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD087B213C04340080AC75 /* DisruptionsConstructor.swift */; };
+		8EB0D6E521432C66005AA004 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD087D213C048D0080AC75 /* File.swift */; };
+		8EB0D6E621432C7F005AA004 /* SeverityCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE42DDA2131BD0400631B36 /* SeverityCodes.swift */; };
+		8EB0D6E721432C82005AA004 /* CardPackStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE42DDC2131BE3E00631B36 /* CardPackStyles.swift */; };
+		8EB0D6E821432C86005AA004 /* CardGroupStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE42DDE2131BE5C00631B36 /* CardGroupStyles.swift */; };
+		8EB0D6E921432C89005AA004 /* CardPartStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE42DE02131BE7A00631B36 /* CardPartStyles.swift */; };
+		8EB0D6EA21432C8B005AA004 /* CardStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE42DE22131BE9900631B36 /* CardStyles.swift */; };
+		8EB0D6EB21432C8E005AA004 /* ServiceTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE42DF62131C2C700631B36 /* ServiceTypes.swift */; };
+		8EB0D6EC21432CA3005AA004 /* Disruption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464C6213434BA0015022B /* Disruption.swift */; };
+		8EB0D6ED21432CD3005AA004 /* ApiLineStatusViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC226062131821C00C1B37B /* ApiLineStatusViewModelBuilder.swift */; };
+		8EB0D6EE21432D0C005AA004 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464CF213434E70015022B /* ApiService.swift */; };
+		8EB0D6EF21432D28005AA004 /* ApiEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE91817213433B10090C280 /* ApiEndPoints.swift */; };
+		8EB0D6F021432D2B005AA004 /* JsonClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE91816213433B00090C280 /* JsonClient.swift */; };
+		8EB0D6F22143307E005AA004 /* KhurramLineStatusAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A13A921283C860097D9B6 /* KhurramLineStatusAppTests.swift */; };
+		8EB0D70B21433D22005AA004 /* good-service.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EB0D70921433CD4005AA004 /* good-service.json */; };
+		8EB0D70D21433DFA005AA004 /* good-service.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EB0D70921433CD4005AA004 /* good-service.json */; };
 		8EC01D172132BC280060E8FE /* DistruptionsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC01D162132BC280060E8FE /* DistruptionsBuilder.swift */; };
 		8EC01D192132BDD40060E8FE /* GoodServicesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC01D182132BDD40060E8FE /* GoodServicesBuilder.swift */; };
 		8EC01D242132FAAF0060E8FE /* LineStatusTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC01D232132FAAF0060E8FE /* LineStatusTable.swift */; };
@@ -101,7 +140,6 @@
 		8E3DA28F213464D3007EC446 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		8E3DA29121346569007EC446 /* ComplexCardPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComplexCardPart.swift; path = Entities/ComplexCardPart.swift; sourceTree = "<group>"; };
 		8E4E082F213437C900C702EA /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		8E4E083321343BAF00C702EA /* line-status.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = "line-status.geojson"; sourceTree = "<group>"; };
 		8E4E083421343DB000C702EA /* CardPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPart.swift; sourceTree = "<group>"; };
 		8E4E083B2134638F00C702EA /* OverallStatusCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OverallStatusCard.swift; path = Entities/OverallStatusCard.swift; sourceTree = "<group>"; };
 		8E4E083C2134638F00C702EA /* SimpleTextCardPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleTextCardPart.swift; path = Entities/SimpleTextCardPart.swift; sourceTree = "<group>"; };
@@ -143,13 +181,14 @@
 		8EAD0879213C010F0080AC75 /* ApiEndPointUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPointUrls.swift; sourceTree = "<group>"; };
 		8EAD087B213C04340080AC75 /* DisruptionsConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisruptionsConstructor.swift; sourceTree = "<group>"; };
 		8EAD087D213C048D0080AC75 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		8EB0D6CB21432571005AA004 /* LocalJsonFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJsonFileReader.swift; sourceTree = "<group>"; };
+		8EB0D70921433CD4005AA004 /* good-service.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "good-service.json"; path = "../../../../../../../good-service.json"; sourceTree = "<group>"; };
 		8EC01D162132BC280060E8FE /* DistruptionsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistruptionsBuilder.swift; sourceTree = "<group>"; };
 		8EC01D182132BDD40060E8FE /* GoodServicesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServicesBuilder.swift; sourceTree = "<group>"; };
 		8EC01D232132FAAF0060E8FE /* LineStatusTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineStatusTable.swift; sourceTree = "<group>"; };
 		8EC01D27213309720060E8FE /* LineStatusTabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineStatusTabelCell.swift; sourceTree = "<group>"; };
 		8EC01D2A2133098E0060E8FE /* LineStatusCellField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineStatusCellField.swift; sourceTree = "<group>"; };
 		8EC226062131821C00C1B37B /* ApiLineStatusViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLineStatusViewModelBuilder.swift; sourceTree = "<group>"; };
-		8EE42DD42131B8AA00631B36 /* disruption.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = disruption.geojson; sourceTree = "<group>"; };
 		8EE42DD62131B91100631B36 /* LineStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineStatusViewModel.swift; sourceTree = "<group>"; };
 		8EE42DDA2131BD0400631B36 /* SeverityCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityCodes.swift; sourceTree = "<group>"; };
 		8EE42DDC2131BE3E00631B36 /* CardPackStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPackStyles.swift; sourceTree = "<group>"; };
@@ -158,7 +197,6 @@
 		8EE42DE22131BE9900631B36 /* CardStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStyles.swift; sourceTree = "<group>"; };
 		8EE42DEC2131BF3C00631B36 /* ApiLineStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLineStatusViewModel.swift; sourceTree = "<group>"; };
 		8EE42DF62131C2C700631B36 /* ServiceTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTypes.swift; sourceTree = "<group>"; };
-		8EE42DFA2131C34E00631B36 /* good-service.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = "good-service.geojson"; sourceTree = "<group>"; };
 		8EE42DFB2131C3B300631B36 /* LineStatusBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineStatusBuilder.swift; sourceTree = "<group>"; };
 		8EE91816213433B00090C280 /* JsonClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JsonClient.swift; path = Api/Commons/JsonClient.swift; sourceTree = "<group>"; };
 		8EE91817213433B10090C280 /* ApiEndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiEndPoints.swift; path = Api/Commons/ApiEndPoints.swift; sourceTree = "<group>"; };
@@ -273,7 +311,6 @@
 				8EE42DD92131BCEB00631B36 /* Enums */,
 				8EE42DD82131BCDF00631B36 /* Entities */,
 				8EE42DD52131B8FA00631B36 /* ViewModels */,
-				8EE42DD12131B7D300631B36 /* Json */,
 				8EC22605213181FF00C1B37B /* Builders */,
 				8EC8815B2129D8DB00C3704A /* Services */,
 				8EC43C692128801D00FBB344 /* Api */,
@@ -290,8 +327,10 @@
 		8E7A13A821283C860097D9B6 /* KhurramLineStatusAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				8E7A13A921283C860097D9B6 /* KhurramLineStatusAppTests.swift */,
+				8EB0D70621433BFF005AA004 /* Json */,
+				8EB0D6CA21432553005AA004 /* Common */,
 				8E7A13AB21283C860097D9B6 /* Info.plist */,
+				8E7A13A921283C860097D9B6 /* KhurramLineStatusAppTests.swift */,
 			);
 			path = KhurramLineStatusAppTests;
 			sourceTree = "<group>";
@@ -323,6 +362,22 @@
 				8EAD0875213BECAF0080AC75 /* Injector.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		8EB0D6CA21432553005AA004 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8EB0D6CB21432571005AA004 /* LocalJsonFileReader.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8EB0D70621433BFF005AA004 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				8EB0D70921433CD4005AA004 /* good-service.json */,
+			);
+			path = Json;
 			sourceTree = "<group>";
 		};
 		8EC01D1D2132F9CF0060E8FE /* Extensions */ = {
@@ -402,16 +457,6 @@
 				8E9464CF213434E70015022B /* ApiService.swift */,
 			);
 			name = Services;
-			sourceTree = "<group>";
-		};
-		8EE42DD12131B7D300631B36 /* Json */ = {
-			isa = PBXGroup;
-			children = (
-				8EE42DD42131B8AA00631B36 /* disruption.geojson */,
-				8EE42DFA2131C34E00631B36 /* good-service.geojson */,
-				8E4E083321343BAF00C702EA /* line-status.geojson */,
-			);
-			path = Json;
 			sourceTree = "<group>";
 		};
 		8EE42DD52131B8FA00631B36 /* ViewModels */ = {
@@ -502,7 +547,7 @@
 				AA61288AB6125CCCB2BAB55D /* [CP] Check Pods Manifest.lock */,
 				8E7A13A121283C860097D9B6 /* Sources */,
 				8E7A13A221283C860097D9B6 /* Frameworks */,
-				8E7A13A321283C860097D9B6 /* Resources */,
+				8EB0D70C21433DE2005AA004 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -589,13 +634,7 @@
 				8E16BA6A21340C5E002BF443 /* Johnston100-Regular.otf in Resources */,
 				8E16BA6C21340C5E002BF443 /* Johnston100-Light.otf in Resources */,
 				8E16BA6D21340C5E002BF443 /* Johnston100-Medium.otf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8E7A13A321283C860097D9B6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				8EB0D70B21433D22005AA004 /* good-service.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +642,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EB0D70C21433DE2005AA004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB0D70D21433DFA005AA004 /* good-service.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,7 +774,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E7A13AA21283C860097D9B6 /* KhurramLineStatusAppTests.swift in Sources */,
+				8EB0D6EC21432CA3005AA004 /* Disruption.swift in Sources */,
+				8EB0D6D921432BA8005AA004 /* OverallStatusCard.swift in Sources */,
+				8EB0D6D621432A8B005AA004 /* LineStatusViewModel.swift in Sources */,
+				8EB0D6CD21432958005AA004 /* ApiLineStatusViewModel.swift in Sources */,
+				8EB0D6E921432C89005AA004 /* CardPartStyles.swift in Sources */,
+				8EB0D6E321432C5F005AA004 /* ApiEndPointUrls.swift in Sources */,
+				8EB0D6EF21432D28005AA004 /* ApiEndPoints.swift in Sources */,
+				8EB0D6DD21432BB5005AA004 /* OverallGoodStatusCard.swift in Sources */,
+				8EB0D6F021432D2B005AA004 /* JsonClient.swift in Sources */,
+				8EB0D6E821432C86005AA004 /* CardGroupStyles.swift in Sources */,
+				8EB0D6EB21432C8E005AA004 /* ServiceTypes.swift in Sources */,
+				8EB0D6DA21432BAB005AA004 /* SimpleTextCardPart.swift in Sources */,
+				8EB0D6ED21432CD3005AA004 /* ApiLineStatusViewModelBuilder.swift in Sources */,
+				8EB0D6CF2143296F005AA004 /* LineStatus.swift in Sources */,
+				8EB0D6EA21432C8B005AA004 /* CardStyles.swift in Sources */,
+				8EB0D6E121432C58005AA004 /* CardPart.swift in Sources */,
+				8EB0D6F22143307E005AA004 /* KhurramLineStatusAppTests.swift in Sources */,
+				8EB0D6EE21432D0C005AA004 /* ApiService.swift in Sources */,
+				8EB0D6DB21432BAE005AA004 /* LineMessageCard.swift in Sources */,
+				8EB0D6CE2143296C005AA004 /* Line.swift in Sources */,
+				8EB0D6DC21432BB1005AA004 /* CardGroup.swift in Sources */,
+				8EB0D6E621432C7F005AA004 /* SeverityCodes.swift in Sources */,
+				8EB0D6CC21432571005AA004 /* LocalJsonFileReader.swift in Sources */,
+				8EB0D6D3214329F2005AA004 /* DistruptionsBuilder.swift in Sources */,
+				8EB0D6E221432C5B005AA004 /* Requesable.swift in Sources */,
+				8EB0D6DE21432BB8005AA004 /* OverallGoodStatusServiceModesCard.swift in Sources */,
+				8EB0D6D5214329FB005AA004 /* GoodServicesBuilder.swift in Sources */,
+				8EB0D6E521432C66005AA004 /* File.swift in Sources */,
+				8EB0D6D821432BA5005AA004 /* ComplexCardPart.swift in Sources */,
+				8EB0D6D4214329F5005AA004 /* LineStatusBuilder.swift in Sources */,
+				8EB0D6D021432973005AA004 /* NetworkStatus.swift in Sources */,
+				8EB0D6D121432977005AA004 /* ServiceType.swift in Sources */,
+				8EB0D6E721432C82005AA004 /* CardPackStyles.swift in Sources */,
+				8EB0D6DF21432BBC005AA004 /* CardPartsMessages.swift in Sources */,
+				8EB0D6D22143297A005AA004 /* AffectedRoute.swift in Sources */,
+				8EB0D6D721432BA2005AA004 /* CardPack.swift in Sources */,
+				8EB0D6E021432C54005AA004 /* Card.swift in Sources */,
+				8EB0D6E421432C63005AA004 /* DisruptionsConstructor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
