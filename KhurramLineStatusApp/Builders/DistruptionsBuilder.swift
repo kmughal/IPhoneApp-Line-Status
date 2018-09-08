@@ -22,7 +22,7 @@ class DisruptionsBuilder  : DisruptionsConstructor {
             
             vm.addCardPack(
                 cardPack: CardPack.init(
-                    style:CardPackStyles.Secondary,
+                    style:CardPackStyles.Primary,
                     cardGroups:[CardGroup.init(
                         style:CardGroupStyles.Disruption,
                         cards: cards)]))

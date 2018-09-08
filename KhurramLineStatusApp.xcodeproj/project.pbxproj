@@ -17,6 +17,7 @@
 		8E16BA6D21340C5E002BF443 /* Johnston100-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E16BA6821340C5E002BF443 /* Johnston100-Medium.otf */; };
 		8E3DA290213464D3007EC446 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3DA28F213464D3007EC446 /* Shared.swift */; };
 		8E3DA29221346569007EC446 /* ComplexCardPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3DA29121346569007EC446 /* ComplexCardPart.swift */; };
+		8E3DC3CD21442B2500CD122B /* DisruptionBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3DC3CC21442B2500CD122B /* DisruptionBuilderTests.swift */; };
 		8E4E0830213437C900C702EA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E082F213437C900C702EA /* Card.swift */; };
 		8E4E083521343DB000C702EA /* CardPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E083421343DB000C702EA /* CardPart.swift */; };
 		8E4E083E2134638F00C702EA /* OverallStatusCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E083B2134638F00C702EA /* OverallStatusCard.swift */; };
@@ -142,6 +143,7 @@
 		8E16BA6821340C5E002BF443 /* Johnston100-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Johnston100-Medium.otf"; path = "../../../../../workplace/line-status-tfl-gov-uk/Source/tfl.linestatus.component/wwwroot/fonts/OTF/Johnston100-Medium.otf"; sourceTree = "<group>"; };
 		8E3DA28F213464D3007EC446 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		8E3DA29121346569007EC446 /* ComplexCardPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComplexCardPart.swift; path = Entities/ComplexCardPart.swift; sourceTree = "<group>"; };
+		8E3DC3CC21442B2500CD122B /* DisruptionBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisruptionBuilderTests.swift; sourceTree = "<group>"; };
 		8E4E082F213437C900C702EA /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		8E4E083421343DB000C702EA /* CardPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPart.swift; sourceTree = "<group>"; };
 		8E4E083B2134638F00C702EA /* OverallStatusCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OverallStatusCard.swift; path = Entities/OverallStatusCard.swift; sourceTree = "<group>"; };
@@ -391,6 +393,7 @@
 			isa = PBXGroup;
 			children = (
 				8E7A13A921283C860097D9B6 /* GoodServiceTests.swift */,
+				8E3DC3CC21442B2500CD122B /* DisruptionBuilderTests.swift */,
 			);
 			path = BuilderTests;
 			sourceTree = "<group>";
@@ -801,6 +804,7 @@
 				8EB0D6DD21432BB5005AA004 /* OverallGoodStatusCard.swift in Sources */,
 				8EB4BE062143DAE4006E4AB5 /* TestHelpers.swift in Sources */,
 				8EB0D6F021432D2B005AA004 /* JsonClient.swift in Sources */,
+				8E3DC3CD21442B2500CD122B /* DisruptionBuilderTests.swift in Sources */,
 				8EB0D6E821432C86005AA004 /* CardGroupStyles.swift in Sources */,
 				8EB0D6EB21432C8E005AA004 /* ServiceTypes.swift in Sources */,
 				8EB0D6DA21432BAB005AA004 /* SimpleTextCardPart.swift in Sources */,

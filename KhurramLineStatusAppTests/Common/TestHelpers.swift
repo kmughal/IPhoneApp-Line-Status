@@ -4,6 +4,10 @@ class TestHelpers {
     
     public static var Instance = TestHelpers()
     
+    func createEmptyLineStatusViewModel() -> LineStatusViewModel {
+        return LineStatusViewModel.init(style: String(), cardPacks: [CardPack]())
+    }
+    
     func createApiLineStatusViewFromJsonFile(_ fileName:String) -> ApiLineStatusViewModel {
         do {
             if let lines:[Line] = try LocalJsonFileReader.Instace.read(fileName) {
