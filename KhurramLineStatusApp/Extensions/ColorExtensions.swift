@@ -25,7 +25,8 @@ extension UIColor {
             "Victoria" :UIColor.init(hex: getStringValue(propertyName:"Victoria")),
             "Piccadilly" : Shared.Instance.DARK_BLUE,
              "Metro" : UIColor.purple,
-             "Tfl": Shared.Instance.DARK_BLUE
+             "Tfl": Shared.Instance.DARK_BLUE,
+             "Central" : .red
             ]
        
        let n = name.lowercased()
