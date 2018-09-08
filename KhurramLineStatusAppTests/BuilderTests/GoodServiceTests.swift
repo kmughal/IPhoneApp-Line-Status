@@ -16,6 +16,16 @@ class GoodServiceBuildersTests: XCTestCase {
         self.cardPacks = sut.cardPacks
     }
     
+    func testForNull() {
+        XCTAssertNotNil(self.cardPacks)
+        
+        let cardGroups = self.cardPacks.first?.cardGroups
+        XCTAssertNotNil(cardGroups)
+        
+        let cards = cardGroups?.first?.cards
+        XCTAssertNotNil(cards)
+    }
+    
     func testCardPacksCountAndStyle() {
          XCTAssertEqual(cardPacks.count, 1)
          XCTAssertEqual(cardPacks.first?.style, CardPackStyles.Secondary)
