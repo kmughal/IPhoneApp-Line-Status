@@ -89,9 +89,12 @@
 		8EB0D6EE21432D0C005AA004 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9464CF213434E70015022B /* ApiService.swift */; };
 		8EB0D6EF21432D28005AA004 /* ApiEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE91817213433B10090C280 /* ApiEndPoints.swift */; };
 		8EB0D6F021432D2B005AA004 /* JsonClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE91816213433B00090C280 /* JsonClient.swift */; };
-		8EB0D6F22143307E005AA004 /* KhurramLineStatusAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A13A921283C860097D9B6 /* KhurramLineStatusAppTests.swift */; };
-		8EB0D70B21433D22005AA004 /* good-service.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EB0D70921433CD4005AA004 /* good-service.json */; };
-		8EB0D70D21433DFA005AA004 /* good-service.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EB0D70921433CD4005AA004 /* good-service.json */; };
+		8EB0D6F22143307E005AA004 /* GoodServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A13A921283C860097D9B6 /* GoodServiceTests.swift */; };
+		8EB4BE002143D872006E4AB5 /* disruptions.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EB4BDFF2143D872006E4AB5 /* disruptions.json */; };
+		8EB4BE012143D872006E4AB5 /* disruptions.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EB4BDFF2143D872006E4AB5 /* disruptions.json */; };
+		8EB4BE032143DA85006E4AB5 /* good-service.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EB4BE022143DA85006E4AB5 /* good-service.json */; };
+		8EB4BE042143DA85006E4AB5 /* good-service.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EB4BE022143DA85006E4AB5 /* good-service.json */; };
+		8EB4BE062143DAE4006E4AB5 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB4BE052143DAE4006E4AB5 /* TestHelpers.swift */; };
 		8EC01D172132BC280060E8FE /* DistruptionsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC01D162132BC280060E8FE /* DistruptionsBuilder.swift */; };
 		8EC01D192132BDD40060E8FE /* GoodServicesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC01D182132BDD40060E8FE /* GoodServicesBuilder.swift */; };
 		8EC01D242132FAAF0060E8FE /* LineStatusTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC01D232132FAAF0060E8FE /* LineStatusTable.swift */; };
@@ -152,7 +155,7 @@
 		8E7A139E21283C860097D9B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E7A13A021283C860097D9B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E7A13A521283C860097D9B6 /* KhurramLineStatusAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KhurramLineStatusAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E7A13A921283C860097D9B6 /* KhurramLineStatusAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhurramLineStatusAppTests.swift; sourceTree = "<group>"; };
+		8E7A13A921283C860097D9B6 /* GoodServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceTests.swift; sourceTree = "<group>"; };
 		8E7A13AB21283C860097D9B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E7A13B021283C860097D9B6 /* KhurramLineStatusAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KhurramLineStatusAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7A13B421283C860097D9B6 /* KhurramLineStatusAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhurramLineStatusAppUITests.swift; sourceTree = "<group>"; };
@@ -182,7 +185,9 @@
 		8EAD087B213C04340080AC75 /* DisruptionsConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisruptionsConstructor.swift; sourceTree = "<group>"; };
 		8EAD087D213C048D0080AC75 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		8EB0D6CB21432571005AA004 /* LocalJsonFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalJsonFileReader.swift; sourceTree = "<group>"; };
-		8EB0D70921433CD4005AA004 /* good-service.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "good-service.json"; path = "../../../../../../../good-service.json"; sourceTree = "<group>"; };
+		8EB4BDFF2143D872006E4AB5 /* disruptions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = disruptions.json; sourceTree = "<group>"; };
+		8EB4BE022143DA85006E4AB5 /* good-service.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "good-service.json"; sourceTree = "<group>"; };
+		8EB4BE052143DAE4006E4AB5 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		8EC01D162132BC280060E8FE /* DistruptionsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistruptionsBuilder.swift; sourceTree = "<group>"; };
 		8EC01D182132BDD40060E8FE /* GoodServicesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServicesBuilder.swift; sourceTree = "<group>"; };
 		8EC01D232132FAAF0060E8FE /* LineStatusTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineStatusTable.swift; sourceTree = "<group>"; };
@@ -327,10 +332,10 @@
 		8E7A13A821283C860097D9B6 /* KhurramLineStatusAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				8EB0D70621433BFF005AA004 /* Json */,
+				8EB4BE072143DBEC006E4AB5 /* BuilderTests */,
+				8EB4BDFE2143D858006E4AB5 /* MockResponses */,
 				8EB0D6CA21432553005AA004 /* Common */,
 				8E7A13AB21283C860097D9B6 /* Info.plist */,
-				8E7A13A921283C860097D9B6 /* KhurramLineStatusAppTests.swift */,
 			);
 			path = KhurramLineStatusAppTests;
 			sourceTree = "<group>";
@@ -368,16 +373,26 @@
 			isa = PBXGroup;
 			children = (
 				8EB0D6CB21432571005AA004 /* LocalJsonFileReader.swift */,
+				8EB4BE052143DAE4006E4AB5 /* TestHelpers.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		8EB0D70621433BFF005AA004 /* Json */ = {
+		8EB4BDFE2143D858006E4AB5 /* MockResponses */ = {
 			isa = PBXGroup;
 			children = (
-				8EB0D70921433CD4005AA004 /* good-service.json */,
+				8EB4BDFF2143D872006E4AB5 /* disruptions.json */,
+				8EB4BE022143DA85006E4AB5 /* good-service.json */,
 			);
-			path = Json;
+			path = MockResponses;
+			sourceTree = "<group>";
+		};
+		8EB4BE072143DBEC006E4AB5 /* BuilderTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A13A921283C860097D9B6 /* GoodServiceTests.swift */,
+			);
+			path = BuilderTests;
 			sourceTree = "<group>";
 		};
 		8EC01D1D2132F9CF0060E8FE /* Extensions */ = {
@@ -626,15 +641,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB4BE032143DA85006E4AB5 /* good-service.json in Resources */,
 				8E7A139F21283C860097D9B6 /* LaunchScreen.storyboard in Resources */,
 				8E7A139C21283C860097D9B6 /* Assets.xcassets in Resources */,
 				8E7A139721283C840097D9B6 /* Main.storyboard in Resources */,
 				8E16BA6921340C5E002BF443 /* Johnston100-Thin.otf in Resources */,
 				8E16BA6B21340C5E002BF443 /* Johnston100-Hairline.otf in Resources */,
 				8E16BA6A21340C5E002BF443 /* Johnston100-Regular.otf in Resources */,
+				8EB4BE002143D872006E4AB5 /* disruptions.json in Resources */,
 				8E16BA6C21340C5E002BF443 /* Johnston100-Light.otf in Resources */,
 				8E16BA6D21340C5E002BF443 /* Johnston100-Medium.otf in Resources */,
-				8EB0D70B21433D22005AA004 /* good-service.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,7 +665,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EB0D70D21433DFA005AA004 /* good-service.json in Resources */,
+				8EB4BE042143DA85006E4AB5 /* good-service.json in Resources */,
+				8EB4BE012143D872006E4AB5 /* disruptions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,6 +799,7 @@
 				8EB0D6E321432C5F005AA004 /* ApiEndPointUrls.swift in Sources */,
 				8EB0D6EF21432D28005AA004 /* ApiEndPoints.swift in Sources */,
 				8EB0D6DD21432BB5005AA004 /* OverallGoodStatusCard.swift in Sources */,
+				8EB4BE062143DAE4006E4AB5 /* TestHelpers.swift in Sources */,
 				8EB0D6F021432D2B005AA004 /* JsonClient.swift in Sources */,
 				8EB0D6E821432C86005AA004 /* CardGroupStyles.swift in Sources */,
 				8EB0D6EB21432C8E005AA004 /* ServiceTypes.swift in Sources */,
@@ -790,7 +808,7 @@
 				8EB0D6CF2143296F005AA004 /* LineStatus.swift in Sources */,
 				8EB0D6EA21432C8B005AA004 /* CardStyles.swift in Sources */,
 				8EB0D6E121432C58005AA004 /* CardPart.swift in Sources */,
-				8EB0D6F22143307E005AA004 /* KhurramLineStatusAppTests.swift in Sources */,
+				8EB0D6F22143307E005AA004 /* GoodServiceTests.swift in Sources */,
 				8EB0D6EE21432D0C005AA004 /* ApiService.swift in Sources */,
 				8EB0D6DB21432BAE005AA004 /* LineMessageCard.swift in Sources */,
 				8EB0D6CE2143296C005AA004 /* Line.swift in Sources */,

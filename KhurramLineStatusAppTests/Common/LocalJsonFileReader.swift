@@ -27,17 +27,4 @@ class LocalJsonFileReader {
         }
         return nil
     }
-    
-    func createApiLineStatusViewModel(lines:[Line]) -> ApiLineStatusViewModel {
-    
-        return ApiLineStatusViewModel(
-            lines: lines,
-            networkStatus: NetworkStatus.CreateEmpty(),
-            hasDisruptions: ApiLineStatusViewModel.hasDelays(ls: lines),
-            hasGoodService: ApiLineStatusViewModel.hasAtleastOneGoodService(ls: lines),
-            rawJsonResponseForLineStatus : ""
-        )
-    
-    }
-    
 }
