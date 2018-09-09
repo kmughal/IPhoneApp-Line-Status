@@ -14,12 +14,8 @@ class DisruptionBuilderTests: XCTestCase {
         
         let goodServiceBuilder = GoodServicesBuilder()
         sut = goodServiceBuilder.build(vm: sut, apiVm: apiViewModel)
-        
         DisruptionBuilderTests.cardPacks = sut.cardPacks
-        
     }
-    
-    
     
     func testCardPacksNullValues() {
         XCTAssertNotNil(DisruptionBuilderTests.cardPacks)

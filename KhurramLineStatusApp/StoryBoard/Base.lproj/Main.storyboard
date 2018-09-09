@@ -49,7 +49,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4V-33-9Nl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4V-33-9Nl">
                                 <rect key="frame" x="18" y="218" width="330.5" height="198"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Loading please wait">
@@ -64,15 +64,72 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="O4V-33-9Nl" firstAttribute="centerY" secondItem="M9X-R4-WaN" secondAttribute="centerY" constant="-26.5" id="Dqy-hD-LmL"/>
-                            <constraint firstItem="O4V-33-9Nl" firstAttribute="centerX" secondItem="M9X-R4-WaN" secondAttribute="centerX" constant="-4.25" id="k4z-Ve-nXN"/>
+                            <constraint firstItem="O4V-33-9Nl" firstAttribute="leading" secondItem="M9X-R4-WaN" secondAttribute="leading" constant="18" id="Za2-J6-cTe"/>
+                            <constraint firstItem="M9X-R4-WaN" firstAttribute="bottom" secondItem="O4V-33-9Nl" secondAttribute="bottom" constant="251" id="bUV-LU-TE6"/>
+                            <constraint firstItem="O4V-33-9Nl" firstAttribute="top" secondItem="M9X-R4-WaN" secondAttribute="top" constant="198" id="fHl-vH-WXu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M9X-R4-WaN"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lGD-ay-npM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1437.5999999999999" y="33.733133433283363"/>
+            <point key="canvasLocation" x="817" y="133"/>
+        </scene>
+        <!--Line Route View Controller-->
+        <scene sceneID="ZGu-lf-NbA">
+            <objects>
+                <viewController storyboardIdentifier="LineRouteViewController" id="ewt-PG-PFn" userLabel="Line Route View Controller" customClass="LineRouteViewController" customModule="KhurramLineStatusApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DTH-PQ-Bjs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxM-3u-adI">
+                                <rect key="frame" x="164" y="190" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WF8-9r-c4R"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Chw-Ic-TTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="142"/>
+        </scene>
+        <!--No Internet View Controller-->
+        <scene sceneID="aN3-mh-1uF">
+            <objects>
+                <viewController storyboardIdentifier="NoInternetController" id="hOk-8h-sMt" customClass="NoInternetViewController" customModule="KhurramLineStatusApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pbZ-AR-Ax8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K22-Mc-DuK">
+                                <rect key="frame" x="90" y="323" width="195" height="41"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="No internet">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="36" name="Johnston100-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K22-Mc-DuK" firstAttribute="top" secondItem="ST5-6f-hsY" secondAttribute="top" constant="303" id="Smn-Rn-0My"/>
+                            <constraint firstItem="K22-Mc-DuK" firstAttribute="centerX" secondItem="pbZ-AR-Ax8" secondAttribute="centerX" id="pyj-wd-glM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ST5-6f-hsY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Giu-jE-qcB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2241" y="142"/>
         </scene>
     </scenes>
 </document>

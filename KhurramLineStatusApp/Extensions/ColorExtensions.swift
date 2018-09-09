@@ -26,7 +26,8 @@ extension UIColor {
             "Piccadilly" : Shared.Instance.DARK_BLUE,
              "Metro" : UIColor.purple,
              "Tfl": Shared.Instance.DARK_BLUE,
-             "Central" : .red
+             "Central" : .red,
+             "Northern" : .black
             ]
        
        let n = name.lowercased()

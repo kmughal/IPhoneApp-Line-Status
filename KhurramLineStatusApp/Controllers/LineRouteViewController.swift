@@ -1,24 +1,13 @@
-//
-//  LineRouteViewController.swift
-//  KhurramLineStatusApp
-//
-//  Created by macpro on 08/09/2018.
-//  Copyright © 2018 macpro. All rights reserved.
-//
-
 import UIKit
 
 class LineRouteViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 

@@ -1,35 +1,43 @@
-//
-//  NoInternetViewController.swift
-//  KhurramLineStatusApp
-//
-//  Created by macpro on 09/09/2018.
-//  Copyright © 2018 macpro. All rights reserved.
-//
-
 import UIKit
+import RxSwift
 
 class NoInternetViewController: UIViewController {
 
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        initialiseTimer()
     }
-    */
 
+    func goToLineStatusPage() {
+        Shared.Instance.updateUI {
+            let lineStatusControllerName = "LineStatusController"
+            let ctrl = Shared.Instance
+                .goTo(
+                    storyBoard: self.storyboard!,
+                    controllerName: lineStatusControllerName) as LineStatusViewController
+            print("Showing : \(ctrl.nibName ?? "nothing to display")")
+        }
+    }
+
+    func initialiseTimer() {
+        var disp: Disposable?
+        disp = Shared.Instance.runCodeInIntervals(interval: 2.0, code: {
+            Shared.Instance.runCode({
+                print("you have internet cool")
+                self.goToLineStatusPage()
+                disp?.dispose()
+            }, {
+                print("still no internet")
+                })
+        })
+    }
 }

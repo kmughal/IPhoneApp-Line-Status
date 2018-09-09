@@ -81,6 +81,7 @@ class LineStatusTable : UITableView,UITableViewDelegate, UITableViewDataSource {
                     addLineName(cell: cell, name: lineMessage.line)
                     addLineStatus(cell: cell, lineMessageCard: lineMessage)
                     addLineColor(cell: cell, color: UIColor.lineColor(name: lineMessage.line))
+                    cell.accessoryType = .disclosureIndicator
                 break
             case let overallStatus as OverallStatusCard:
                     addOverallStatusMessage(cell: cell, message: overallStatus.message)
