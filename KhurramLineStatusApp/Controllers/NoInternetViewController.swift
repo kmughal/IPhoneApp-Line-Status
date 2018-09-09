@@ -3,8 +3,6 @@ import RxSwift
 
 class NoInternetViewController: UIViewController {
 
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -28,16 +26,18 @@ class NoInternetViewController: UIViewController {
         }
     }
 
+    func presentLineStatusController(_ disp: Disposable) -> Void {
+        Shared.Instance.runCode({
+            print("you have internet cool")
+            self.goToLineStatusPage()
+            disp.dispose()
+        }, {
+                print("still no internet")
+            })
+    }
+
     func initialiseTimer() {
         var disp: Disposable?
-        disp = Shared.Instance.runCodeInIntervals(interval: 2.0, code: {
-            Shared.Instance.runCode({
-                print("you have internet cool")
-                self.goToLineStatusPage()
-                disp?.dispose()
-            }, {
-                print("still no internet")
-                })
-        })
+        disp = Shared.Instance.runCodeInIntervals(interval: 2.0, code: { self.presentLineStatusController(disp!) })
     }
 }
