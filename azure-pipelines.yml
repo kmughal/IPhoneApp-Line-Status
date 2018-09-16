@@ -7,21 +7,12 @@ pool:
   vmImage: 'macOS 10.13'
 
 steps:
+- script: /usr/local/bin/pod install
+  displayName: 'pod install using a script'
+  
 - task: Xcode@5
   inputs:
     scheme: 'KhurramLineStatusApp'
     sdk: 'iphoneos'
     configuration: 'Release'
     xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
-    
-- script: /usr/local/bin/pod install
-  displayName: 'pod install using a script'
-
-- task: CocoaPods@0
-  displayName: 'pod install using the CocoaPods task with defaults'
-
-- task: CocoaPods@0
-  inputs:
-    forceRepoUpdate: true
-    projectDirectory: '$(system.defaultWorkingDirectory)'
-  displayName: 'pod install using the CocoaPods task with a forced repo update and a custom project directory'
