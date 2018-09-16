@@ -49,7 +49,7 @@ class LineStatusTableHelpers {
                           messages: [CardPartsMessages]) -> Void {
 
             var counters = Array.init(repeating: 0, count: totalRows)
-            Shared.Instance.runCodeInIntervals(
+            let r = Shared.Instance.runCodeInIntervals(
                 interval: 2,
                 code: {
                     Shared.Instance.updateUI {
@@ -67,5 +67,6 @@ class LineStatusTableHelpers {
                         }
                     }
                 })
+            print(r)
         }
     }

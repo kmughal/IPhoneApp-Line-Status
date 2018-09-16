@@ -51,7 +51,7 @@ class LineStatusViewController: UIViewController {
     
     func getLineStatus() {
         
-        lineStatusBuilder?.build().subscribe(onNext: { data in
+        let dispose = lineStatusBuilder?.build().subscribe(onNext: { data in
             let updateRequired = LineStatusViewModel.isJsonDifferent(oldJson: data.rawJson, newJson: self.table.viewModel.rawJson)
             
             if (updateRequired) {
@@ -59,16 +59,23 @@ class LineStatusViewController: UIViewController {
             }
             
         }, onError: nil, onCompleted: nil, onDisposed: nil)
+        
+        guard let d:Disposable = dispose  else {
+            return
+        }
+        
+        print(d)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.view.backgroundColor = UIColor.lightGray
         self.getLineStatus()
-        Shared.Instance.runCodeInIntervals(interval: 100, code: {
+        let result = Shared.Instance.runCodeInIntervals(interval: 100, code: {
             self.getLineStatus()
         })
         self.view.backgroundColor = UIColor.yellow
+        print(result)
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
