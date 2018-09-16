@@ -27,7 +27,8 @@ extension UIColor {
              "Metro" : UIColor.purple,
              "Tfl": Shared.Instance.DARK_BLUE,
              "Central" : .red,
-             "Northern" : .black
+             "Northern" : .black,
+             "Jubilee" : UIColor.lightGray
             ]
        
        let n = name.lowercased()
