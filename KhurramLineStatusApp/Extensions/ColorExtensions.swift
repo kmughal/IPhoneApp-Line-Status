@@ -28,7 +28,8 @@ extension UIColor {
              "Tfl": Shared.Instance.DARK_BLUE,
              "Central" : .red,
              "Northern" : .black,
-             "Jubilee" : UIColor.lightGray
+             "Jubilee" : UIColor.lightGray,
+             "Dlr" :UIColor.init(hex: getStringValue(propertyName:"Waterloo")),
             ]
        
        let n = name.lowercased()
